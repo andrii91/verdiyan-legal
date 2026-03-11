@@ -1,0 +1,190 @@
+// Button CTA Component
+// Based on the button design from images
+
+@use 'variables' as *;
+@use 'typography' as *;
+
+// Button Base Styles
+.btn-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  font-family: $font-family-base;
+  font-size: $font-size-p3;
+  font-weight: 600;
+  line-height: 1.5;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  border-radius: $radius-md;
+  cursor: pointer;
+  transition: background-color $transition-base, border-color $transition-base, color $transition-base;
+  outline: none;
+  
+  &:focus-visible {
+    outline: 2px solid $color-border-focus;
+    outline-offset: 2px;
+  }
+  
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 1;
+  }
+}
+
+// Dark Theme - Primary
+.btn-cta--dark-primary {
+  background-color: $fiord-900;
+  color: $white-000;
+  
+  &:hover:not(:disabled) {
+    background-color: $fiord-800;
+  }
+  
+  &:active:not(:disabled) {
+    background-color: $fiord-800;
+  }
+  
+  &:disabled {
+    background-color: $color-disabled-bg;
+    color: $color-text-disabled;
+  }
+}
+
+// Dark Theme - Outline
+.btn-cta--dark-outline {
+  background-color: $fiord-900;
+  color: $white-000;
+  border: 1px solid $white-000;
+  
+  &:hover:not(:disabled) {
+    background-color: $fiord-800;
+  }
+  
+  &:active:not(:disabled) {
+    background-color: $fiord-800;
+  }
+  
+  &:disabled {
+    background-color: $color-disabled-bg;
+    color: $color-text-disabled;
+    border-color: $color-disabled-bg;
+  }
+}
+
+// Light Theme - Primary
+.btn-cta--light-primary {
+  background-color: $white-linen-200;
+  color: $fiord-900;
+  
+  &:hover:not(:disabled) {
+    background-color: $white-linen-300;
+  }
+  
+  &:active:not(:disabled) {
+    background-color: $white-linen-300;
+  }
+  
+  &:disabled {
+    background-color: $color-disabled-bg;
+    color: $color-text-disabled;
+  }
+}
+
+// Light Theme - Outline
+.btn-cta--light-outline {
+  background-color: $white-000;
+  color: $fiord-900;
+  border: 1px solid $fiord-900;
+  
+  &:hover:not(:disabled) {
+    background-color: $white-linen-200;
+  }
+  
+  &:active:not(:disabled) {
+    background-color: $white-linen-200;
+  }
+  
+  &:disabled {
+    background-color: $color-disabled-bg;
+    color: $color-text-disabled;
+    border-color: $color-disabled-bg;
+  }
+}
+
+// Violet Theme - Primary (Electric Violet)
+.btn-cta--violet-primary {
+  background-color: $electric-violet-600;
+  color: $white-000;
+  
+  &:hover:not(:disabled) {
+    background-color: $electric-violet-700;
+  }
+  
+  &:active:not(:disabled) {
+    background-color: $electric-violet-700;
+  }
+  
+  &:disabled {
+    background-color: $color-disabled-bg;
+    color: $color-text-disabled;
+  }
+}
+
+// Violet Theme - Outline
+.btn-cta--violet-outline {
+  background-color: transparent;
+  color: $electric-violet-600;
+  border: 1px solid $electric-violet-600;
+  
+  &:hover:not(:disabled) {
+    background-color: $electric-violet-100;
+    border-color: $electric-violet-700;
+  }
+  
+  &:active:not(:disabled) {
+    background-color: $electric-violet-200;
+    border-color: $electric-violet-700;
+  }
+  
+  &:disabled {
+    background-color: $color-disabled-bg;
+    color: $color-text-disabled;
+    border-color: $color-disabled-bg;
+  }
+}
+
+// White Theme - Outline (White background with dark border)
+.btn-cta--white-outline {
+  background-color: $white-000;
+  color: $fiord-900;
+  border: 1px solid $white-000;
+  
+  &:hover:not(:disabled) {
+    background-color: $fiord-050;
+    border-color: $fiord-800;
+  }
+  
+  &:active:not(:disabled) {
+    background-color: $fiord-100;
+    border-color: $fiord-800;
+  }
+  
+  &:disabled {
+    background-color: $color-disabled-bg;
+    color: $color-text-disabled;
+    border-color: $color-disabled-bg;
+  }
+}
+
+// Button Sizes (if needed)
+.btn-cta--sm {
+  padding: $spacing-sm $spacing-md;
+  font-size: $font-size-p3;
+}
+
+.btn-cta--lg {
+  padding: $spacing-lg $spacing-xl;
+  font-size: $font-size-p1;
+}

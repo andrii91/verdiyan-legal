@@ -1,0 +1,94 @@
+{
+  "nav": {
+    "specializations": "Specializations",
+    "about": "About Us",
+    "services": "Services",
+    "contacts": "Contacts",
+    "consumerRepresentation": "Consumer Representation",
+    "contactUs": "Contact Us"
+  },
+  "header": {
+    "title": "Verdiyan Legal",
+    "description": "The law firm provides legal services to clients from among natural persons and commercial companies, with an emphasis on a high level of expertise, a strategic approach, and clear communication."
+  },
+  "specializations": {
+    "title": "Specializations",
+    "description": "We specialize in providing legal services in a wide area. We help clients resolve legal issues related to property rights, contractual relationships, inheritance, and other areas of civil law. We ensure the preparation and revision of contracts, representation in disputes, and the protection of personal rights and property interests.",
+    "civil": {
+      "title": "Civil Law",
+      "description1": "We provide legal advice and representation in the field of civil law, especially in matters of contractual relationships, protection of property rights, compensation for damages, inheritance, and other civil agendas.",
+      "description2": "We ensure the preparation and revision of contracts, legal analyses, representation in court disputes, and out-of-court dispute resolution."
+    },
+    "commercial": {
+      "title": "Commercial Law",
+      "description1": "In the field of commercial law, we provide legal services to entrepreneurs and commercial companies. We focus primarily on commercial contracts, corporate agenda, company formation, changes in company structure, and advice on business transactions.",
+      "description2": "We represent clients in negotiations with business partners, in court proceedings, and in resolving commercial disputes."
+    },
+    "family": {
+      "title": "Family Law",
+      "description1": "Family law requires not only a professional approach but also sensitive handling of the entire matter. We provide legal support in matters of divorce, arrangements for the care of minor children, alimony, contact with the child, and property settlement.",
+      "description2": "We help clients find solutions that are legally correct and at the same time appropriate to the circumstances of the specific family situation."
+    },
+    "intellectual": {
+      "title": "Intellectual Property Law",
+      "description1": "We ensure legal protection in the field of copyright, trademarks, industrial designs, and other intellectual property rights.",
+      "description2": "We provide clients with advice on the registration of rights, their administration, licensing, and enforcement of claims in case of infringement of rights, including representation in disputes."
+    },
+    "labor": {
+      "title": "Labor Law",
+      "description1": "The law firm Verdiyan Legal has experience in representing both employers and employees in resolving labor disputes, both in the pre-litigation phase and in court proceedings.",
+      "description2": "We provide advice especially in matters of termination of employment, employment contracts, compensation for damages, internal regulations, and labor disputes."
+    },
+    "advertising": {
+      "title": "Advertising and Tobacco Law",
+      "description1": "We provide specialized legal advice in the field of advertising and tobacco product regulation, including related administrative proceedings and communication with supervisory authorities.",
+      "description2": "We represent clients in assessing the compliance of marketing campaigns with legal regulations, in resolving disputes, and in setting up internal compliance processes. Experience in this area stems, among other things, from long-term cooperation with multinational entities."
+    }
+  },
+  "bannerSection": {
+    "title": "Representation of consumers in disputes with non-bank loan providers",
+    "description": "A separate agenda of the law firm is representing clients in disputes with consumer loan providers, especially with non-bank entities. These services are provided under the trade name Nourox (formerly FinHelp).",
+    "cta": "Consumer Representation"
+  },
+  "aboutUs": {
+    "description": "About Us",
+    "title": "Verdiyan Legal",
+    "paragraph1": "The founding partner of the law firm Verdiyan Legal is Mgr. Bagrat Verdiyan, an attorney who has been practicing law since 2005. Since 2009, he has been practicing as an independent attorney. Before establishing his own practice, he gained extensive experience through long-term cooperation with a leading Czech law firm, where he participated in handling legal agendas for significant corporate clients and in representing clients in extensive court disputes.",
+    "paragraph2": "Verdiyan Legal builds on these experiences and provides legal services both in the framework of long-term legal counseling and in resolving individual cases. We offer clients professional support in business transactions, court disputes, protection of property rights, and in sensitive personal and family matters. Our priority is to provide legal services that are not only legally precise but also practical and effective.",
+    "paragraph3": "The law firm provides legal services in Czech, English, Russian, and German languages.",
+    "positions": {
+      "partner": "Partner | Attorney",
+      "collaborating": "Collaborating Attorney",
+      "trainee": "Trainee Attorney",
+      "projectManager": "Project Manager"
+    }
+  },
+  "services": {
+    "title": "Services",
+    "item1": {
+      "title": "Debt collection and representation of creditors and debtors"
+    },
+    "item2": {
+      "title": "Legal due diligence and support in business transactions"
+    },
+    "item3": {
+      "title": "Representation of clients in court disputes and arbitration proceedings"
+    },
+    "item4": {
+      "title": "Protection of intellectual property rights and management of disputes in this area"
+    },
+    "item5": {
+      "title": "Representation of Czech and multinational companies"
+    }
+  },
+  "cookies": {
+    "title": "This website uses cookies",
+    "description": "We use cookies, which we process according to the principles of personal data protection.",
+    "acceptAll": "Accept all",
+    "rejectAll": "Reject all"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Error"
+  }
+}

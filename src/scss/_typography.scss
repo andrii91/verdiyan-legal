@@ -1,0 +1,128 @@
+// Typography - Open Sans Font
+// Based on the typography guide from design
+
+@use 'variables' as *;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+
+// Font Family
+$font-family-base: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+
+// Font Sizes and Line Heights
+// H1
+$font-size-h1: 60px;
+$line-height-h1: 72px;
+$letter-spacing-h1: -0.02em; // -2%
+
+// H2
+$font-size-h2: 36px;
+$line-height-h2: 44px;
+$letter-spacing-h2: -0.02em; // -2%
+
+// H3
+$font-size-h3: 30px;
+$line-height-h3: 38px;
+$letter-spacing-h3: 0;
+
+// H4
+$font-size-h4: 20px;
+$line-height-h4: 30px;
+$letter-spacing-h4: 0;
+
+// H5
+$font-size-h5: 20px;
+$line-height-h5: 30px;
+$letter-spacing-h5: 0;
+
+// Paragraph 1
+$font-size-p1: 20px;
+$line-height-p1: 30px;
+$letter-spacing-p1: 0;
+
+// Paragraph 2
+$font-size-p2: 18px;
+$line-height-p2: 28px;
+$letter-spacing-p2: 0;
+
+// Paragraph 3
+$font-size-p3: 16px;
+$line-height-p3: 24px;
+$letter-spacing-p3: 0;
+
+// Typography Classes
+body {
+  font-family: $font-family-base;
+  font-size: $font-size-p2;
+  line-height: $line-height-p2;
+  letter-spacing: $letter-spacing-p2;
+  color: $color-text-primary;
+}
+
+h1,
+.h1 {
+  font-size: $font-size-h1;
+  line-height: $line-height-h1;
+  letter-spacing: $letter-spacing-h1;
+  font-weight: 700;
+  color: $color-text-primary;
+}
+
+h2,
+.h2 {
+  font-size: $font-size-h2;
+  line-height: $line-height-h2;
+  letter-spacing: $letter-spacing-h2;
+  font-weight: 700;
+  color: $color-text-primary;
+}
+
+h3,
+.h3 {
+  font-size: $font-size-h3;
+  line-height: $line-height-h3;
+  letter-spacing: $letter-spacing-h3;
+  font-weight: 700;
+  color: $color-text-primary;
+}
+
+h4,
+.h4 {
+  font-size: $font-size-h4;
+  line-height: $line-height-h4;
+  letter-spacing: $letter-spacing-h4;
+  font-weight: 600;
+  color: $color-text-primary;
+}
+
+h5,
+.h5 {
+  font-size: $font-size-h5;
+  line-height: $line-height-h5;
+  letter-spacing: $letter-spacing-h5;
+  font-weight: 600;
+  color: $color-text-primary;
+}
+
+p,
+.p1 {
+  font-size: $font-size-p1;
+  line-height: $line-height-p1;
+  letter-spacing: $letter-spacing-p1;
+  font-weight: 400;
+  color: $color-text-primary;
+}
+
+.p2 {
+  font-size: $font-size-p2;
+  line-height: $line-height-p2;
+  letter-spacing: $letter-spacing-p2;
+  font-weight: 400;
+  color: $color-text-primary;
+}
+
+.p3 {
+  font-size: $font-size-p3;
+  line-height: $line-height-p3;
+  letter-spacing: $letter-spacing-p3;
+  font-weight: 400;
+  color: $color-text-primary;
+}

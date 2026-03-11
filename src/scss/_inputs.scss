@@ -1,0 +1,111 @@
+// Input Fields Component
+// Based on the email input design from images
+
+@use 'variables' as *;
+@use 'typography' as *;
+
+// Input Base Styles
+.input-field {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-sm;
+  width: 100%;
+}
+
+.input-label {
+  font-family: $font-family-base;
+  font-size: $font-size-p2;
+  font-weight: 500;
+  line-height: 1.5;
+  color: $color-text-primary;
+}
+
+.input-control {
+  width: 100%;
+  padding: $spacing-md;
+  font-family: $font-family-base;
+  font-size: $font-size-p2;
+  line-height: 1.5;
+  color: $color-text-primary;
+  background-color: $white-000;
+  border: 1px solid $color-border;
+  border-radius: $radius-md;
+  transition: border-color $transition-base, box-shadow $transition-base;
+  outline: none;
+  
+  &::placeholder {
+    color: $fiord-400;
+    opacity: 1;
+  }
+  
+  // Default state (light grey border)
+  &:not(:focus):not(:disabled) {
+    border-color: $color-border;
+  }
+  
+  // Focused state (dark border)
+  &:focus {
+    border-color: $color-border-focus;
+    border-width: 2px;
+    box-shadow: 0 0 0 3px rgba($fiord-900, 0.1);
+  }
+  
+  // Disabled state
+  &:disabled {
+    background-color: $color-disabled-bg;
+    color: $color-text-disabled;
+    cursor: not-allowed;
+    border-color: $color-disabled-bg;
+    
+    &::placeholder {
+      color: $color-text-disabled;
+    }
+  }
+  
+  // Error state (optional)
+  &.input-control--error {
+    border-color: #DC2626;
+    
+    &:focus {
+      border-color: #DC2626;
+      box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.1);
+    }
+  }
+}
+
+// Input with icon (optional)
+.input-field--with-icon {
+  position: relative;
+  
+  .input-icon {
+    position: absolute;
+    left: $spacing-md;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    pointer-events: none;
+    color: $fiord-400;
+  }
+  
+  .input-control {
+    padding-left: $spacing-xl + $spacing-md;
+  }
+}
+
+// Textarea
+textarea.input-control {
+  min-height: 120px;
+  resize: vertical;
+}
+
+// Select
+select.input-control {
+  cursor: pointer;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23475467' d='M6 9L1 4h10z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right $spacing-md center;
+  background-size: 12px;
+  padding-right: $spacing-xl;
+  appearance: none;
+}

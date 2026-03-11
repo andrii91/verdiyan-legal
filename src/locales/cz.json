@@ -1,0 +1,94 @@
+{
+  "nav": {
+    "specializations": "Specializace",
+    "about": "O nás",
+    "services": "Služby",
+    "contacts": "Kontakty",
+    "consumerRepresentation": "Zastupování spotřebitelů",
+    "contactUs": "Kontaktujte nás"
+  },
+  "header": {
+    "title": "Verdiyan Legal",
+    "description": "Advokátní kancelář poskytuje právní služby klientům z řad fyzických osob i obchodních společností, a to s důrazem na vysokou odbornou úroveň, strategický přístup a srozumitelnou komunikaci."
+  },
+  "specializations": {
+    "title": "Specializace",
+    "description": "Specializujeme se na poskytování právních služeb v široké oblasti. Pomáháme klientům řešit právní otázky týkající se majetkových práv, smluvních vztahů, dědictví a dalších oblastí občanského práva. Zajišťujeme přípravu a revizi smluv, zastupování ve sporech a ochranu osobních práv a majetkových zájmů.",
+    "civil": {
+      "title": "Občanské právo",
+      "description1": "Poskytujeme právní poradenství a zastoupení v oblasti občanského práva, zejména ve věcech smluvních vztahů, ochrany majetkových práv, náhrady škody, dědictví a dalších civilních agend.",
+      "description2": "Zajišťujeme přípravu a revizi smluv, právní analýzy, zastupování v soudních sporech i mimosoudní řešení sporů."
+    },
+    "commercial": {
+      "title": "Obchodní právo",
+      "description1": "V oblasti obchodního práva poskytujeme právní služby podnikatelům i obchodním společnostem. Zaměřujeme se zejména na obchodní smlouvy, korporátní agendu, zakládání společností, změny ve struktuře společnosti a poradenství při podnikatelských transakcích.",
+      "description2": "Zastupujeme klienty při jednání s obchodními partnery, v řízeních před soudy a při řešení obchodních sporů."
+    },
+    "family": {
+      "title": "Rodinné právo",
+      "description1": "Rodinné právo vyžaduje nejen odborný přístup, ale i citlivé vedení celé věci. Poskytujeme právní podporu v otázkách rozvodu, úpravy péče o nezletilé děti, výživného, styku s dítětem a majetkového vypořádání.",
+      "description2": "Pomáháme klientům hledat řešení, které je právně správné a současně přiměřené okolnostem konkrétní rodinné situace."
+    },
+    "intellectual": {
+      "title": "Právo duševního vlastnictví",
+      "description1": "Zajišťujeme právní ochranu v oblasti autorského práva, ochranných známek, průmyslových vzorů a dalších práv duševního vlastnictví.",
+      "description2": "Klientům poskytujeme poradenství při registraci práv, jejich správě, licencování i při vymáhání nároků v případě porušení práv, včetně zastupování ve sporech."
+    },
+    "labor": {
+      "title": "Pracovní právo",
+      "description1": "Advokátní kancelář Verdiyan Legal má zkušenosti se zastupováním zaměstnavatelů i zaměstnanců při řešení pracovněprávních sporů, a to jak v předsoudní fázi, tak v řízeních před soudy.",
+      "description2": "Poskytujeme poradenství zejména ve věcech ukončení pracovního poměru, pracovních smluv, náhrad škody, interních předpisů a pracovních sporů."
+    },
+    "advertising": {
+      "title": "Reklamní a tabákové právo",
+      "description1": "Poskytujeme specializované právní poradenství v oblasti regulace reklamy a tabákových výrobků, včetně souvisejících správních řízení a komunikace s dozorovými orgány.",
+      "description2": "Zastupujeme klienty při posuzování souladu marketingových kampaní s právními předpisy, při řešení sporů a při nastavování interních procesů compliance. Zkušenosti v této oblasti vycházejí mimo jiné z dlouhodobé spolupráce s nadnárodními subjekty."
+    }
+  },
+  "bannerSection": {
+    "title": "Zastupování spotřebitelů ve sporech s poskytovateli nebankovních úvěrů",
+    "description": "Samostatnou agendou advokátní kanceláře je zastupování klientů ve sporech s poskytovateli spotřebitelských úvěrů, zejména s nebankovními subjekty. Tyto služby jsou poskytovány pod obchodním označením Nourox (dříve FinHelp).",
+    "cta": "Zastupování spotřebitelů"
+  },
+  "aboutUs": {
+    "description": "O nás",
+    "title": "Verdiyan Legal",
+    "paragraph1": "Zakládajícím partnerem advokátní kanceláře Verdiyan Legal je Mgr. Bagrat Verdiyan, advokát, který působí v advokacii od roku 2005. Od roku 2009 vykonává advokacii jako samostatný advokát. Před založením vlastní praxe získal rozsáhlé zkušenosti v rámci dlouhodobé spolupráce s přední českou advokátní kanceláří, kde se podílel na řešení právních agend významných korporátních klientů i na zastupování v rozsáhlých soudních sporech.",
+    "paragraph2": "Verdiyan Legal navazuje na tyto zkušenosti a poskytuje právní služby jak v rámci dlouhodobého právního poradenství, tak při řešení jednotlivých případů. Klientům nabízíme profesionální podporu při obchodních transakcích, v soudních sporech, při ochraně majetkových práv i v citlivých osobních a rodinných záležitostech. Naší prioritou je poskytovat právní služby, které jsou nejen právně precizní, ale zároveň praktické a efektivní.",
+    "paragraph3": "Advokátní kancelář poskytuje právní služby v českém, anglickém, ruském a německém jazyce.",
+    "positions": {
+      "partner": "Partner | Advokát",
+      "collaborating": "Spolupracující advokát",
+      "trainee": "Advokátní koncipientka",
+      "projectManager": "Projektový manažer"
+    }
+  },
+  "services": {
+    "title": "Služby",
+    "item1": {
+      "title": "Vymáhání pohledávek a zastupování věřitelů i dlužníků"
+    },
+    "item2": {
+      "title": "Právní due diligence a podpora při obchodních transakcích"
+    },
+    "item3": {
+      "title": "Zastupování klientů v soudních sporech a rozhodčích řízeních"
+    },
+    "item4": {
+      "title": "Ochrana práv duševního vlastnictví a vedení sporů v této oblasti"
+    },
+    "item5": {
+      "title": "Zastupování českých i nadnárodních společností"
+    }
+  },
+  "cookies": {
+    "title": "Tento web využívá cookies",
+    "description": "Využíváme soubory cookies, které zpracováváme podle zásad ochrany osobních údajů.",
+    "acceptAll": "Přijmout vše",
+    "rejectAll": "Odmítnout vše"
+  },
+  "common": {
+    "loading": "Načítání...",
+    "error": "Chyba"
+  }
+}
