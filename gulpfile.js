@@ -127,6 +127,14 @@ gulp.task('php', function() {
     .pipe(gulp.dest('dist'));
 });
 
+// Copy favicon folder with all files
+gulp.task('favicon', function() {
+  return gulp.src('src/favicon/**/*', { 
+      base: 'src' // Preserve folder structure
+    })
+    .pipe(gulp.dest('dist'));
+});
+
 // Serve task
 gulp.task('serve', function() {
   return gulp.src('dist')
@@ -141,7 +149,7 @@ gulp.task('serve', function() {
 // Build task
 gulp.task('build', gulp.series(
   'clean',
-  gulp.parallel('sass', 'js', 'js-i18n', 'images-all', 'images-optimize', 'fonts', 'locales', 'pages', 'php')
+  gulp.parallel('sass', 'js', 'js-i18n', 'images-all', 'images-optimize', 'fonts', 'locales', 'pages', 'php', 'favicon')
 ));
 
 // Watch task

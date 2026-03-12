@@ -8,14 +8,14 @@
 // Use typography
 @use 'typography' as *;
 
-// Slick Carousel styles
-@import '../../node_modules/slick-carousel/slick/slick.scss';
-// @import '../../node_modules/slick-carousel/slick/slick-theme.scss';
-
 // Use components
 @use 'buttons';
 @use 'inputs';
 @use 'icons';
+
+// Slick Carousel styles (must be after @use rules)
+@import '../../node_modules/slick-carousel/slick/slick.scss';
+// @import '../../node_modules/slick-carousel/slick/slick-theme.scss';
 
 // Base styles
 body {
