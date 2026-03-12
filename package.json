@@ -35,6 +35,8 @@
     "sass": "^1.77.0"
   },
   "dependencies": {
-    "jquery": "^3.7.1"
+    "jquery": "^3.7.1",
+    "jquery.inputmask": "^3.3.4",
+    "slick-carousel": "^1.8.1"
   }
 }

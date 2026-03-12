@@ -28,6 +28,15 @@
     
     // Initialize cookie consent banner
     initCookieBanner();
+    
+    // Initialize registration modal
+    initRegistrationModal();
+    
+    // Initialize mobile navigation
+    initMobileNavigation();
+    
+    // Initialize about us cards slider
+    initAboutUsSlider();
   }
 
   // Initialize i18n system
@@ -45,26 +54,36 @@
       setupLanguageSelector();
       
       // Update cookie banner translations when language changes
-      $(window).on('languageChanged', function() {
+      window.addEventListener('languageChanged', function(event) {
         // i18n will automatically update elements with data-i18n
-        // No additional action needed
+        // Update all language selects
+        const newLang = event.detail?.lang || window.i18n.getCurrentLang();
+        updateAllLanguageSelects(newLang);
       });
     });
   }
 
   // Setup language selector change handler
   function setupLanguageSelector() {
-    const $langSelect = $('.nav__select');
+    const $langSelects = $('.nav__select');
     
-    // Set current language in select
+    // Set current language in all selects
     const currentLang = window.i18n.getCurrentLang();
-    $langSelect.val(currentLang);
+    $langSelects.val(currentLang);
     
-    // Handle language change
-    $langSelect.on('change', function() {
+    // Handle language change in any select
+    $langSelects.on('change', function() {
       const selectedLang = $(this).val();
-      window.i18n.changeLang(selectedLang);
+      window.i18n.changeLang(selectedLang).then(function() {
+        // Update all selects to reflect the new language
+        updateAllLanguageSelects(selectedLang);
+      });
     });
+  }
+  
+  // Update all language selects to the specified language
+  function updateAllLanguageSelects(lang) {
+    $('.nav__select').val(lang);
   }
 
   // Navigation scroll functionality
@@ -77,7 +96,7 @@
   // Smooth scroll for anchor links
   function initSmoothScroll() {
     // Handle navigation links
-    $(".nav__link[href^='#'], .btn[href^='#']").click(function (e) {
+    $(".nav__link[href^='#'], .btn[href^='#']:not([data-open-registration])").click(function (e) {
       e.preventDefault();
       var id = $(this).attr("href");
       
@@ -97,7 +116,7 @@
         {
           scrollTop: top - offset,
         },
-        600 // Animation duration in milliseconds
+        60
       );
     });
   }
@@ -136,6 +155,19 @@
       // Show again after 24 hours if no choice was made
       setCookie('cookie_banner_closed', 'true', 1);
     });
+
+    // Handle click on "Cookies" link in footer
+    $('.footer__cookies-link').on('click', function(e) {
+      e.preventDefault();
+      showCookieBanner();
+    });
+  }
+
+  // Show cookie banner with animation
+  function showCookieBanner() {
+    const $banner = $('#cookie-banner');
+    $banner.removeClass('cookie-banner--hidden');
+    $banner.fadeIn(300);
   }
 
   // Hide cookie banner with animation
@@ -197,5 +229,318 @@
 
   // Initialize WebP image loading
   initWebPImages();
+
+  // Registration Modal
+  function initRegistrationModal() {
+    const $modal = $('#registration-modal');
+    const $overlay = $('.registration-modal__overlay');
+    const $closeBtn = $('.registration-modal__close');
+    const $form = $('#registration-form');
+    const $phoneInput = $('#phone');
+    const $submitBtn = $('.registration-modal__submit');
+    const $submitText = $('.submit-text');
+    const $submitLoading = $('.submit-loading');
+
+    // Initialize InputMask for phone using jQuery plugin
+    if (typeof $.fn.inputmask !== 'undefined') {
+      $phoneInput.inputmask({
+        mask: '+9 (999) 999-9999',
+        showMaskOnHover: true,
+        showMaskOnFocus: true,
+        clearIncomplete: true
+      });
+    }
+
+    // Open modal function
+    window.openRegistrationModal = function() {
+      $modal.fadeIn(300);
+      $('body').css('overflow', 'hidden');
+      // Reset form when opening
+      resetForm();
+      // Ensure button is disabled initially
+      updateSubmitButtonState();
+    };
+
+    // Close modal function
+    function closeModal() {
+      $modal.fadeOut(300);
+      $('body').css('overflow', '');
+      resetForm();
+    }
+
+    // Reset form function
+    function resetForm() {
+      $form[0].reset();
+      clearErrors();
+      hideMessages();
+      setSubmitState(false);
+      updateSubmitButtonState(); // Disable button when form is reset
+    }
+
+    // Clear all error messages
+    function clearErrors() {
+      $('.input-error').text('').hide();
+      $('.input-control').removeClass('input-control--error');
+      $('#form-error').hide();
+    }
+
+    // Hide all messages
+    function hideMessages() {
+      $('#form-error').hide();
+      $('#form-success').hide();
+    }
+
+    // Set submit button state (loading state)
+    function setSubmitState(loading) {
+      if (loading) {
+        $submitBtn.prop('disabled', true);
+        $submitText.hide();
+        $submitLoading.show();
+      } else {
+        updateSubmitButtonState();
+        $submitText.show();
+        $submitLoading.hide();
+      }
+    }
+
+    // Update submit button state based on privacy policy checkbox
+    function updateSubmitButtonState() {
+      const $privacyCheckbox = $('#privacy-policy');
+      const isChecked = $privacyCheckbox.is(':checked');
+      $submitBtn.prop('disabled', !isChecked);
+    }
+
+    // Show error message for field
+    function showFieldError(fieldId, message) {
+      const $field = $('#' + fieldId);
+      const $error = $('#' + fieldId + '-error');
+      $field.addClass('input-control--error');
+      $error.text(message).show();
+    }
+
+    // Clear field error
+    function clearFieldError(fieldId) {
+      const $field = $('#' + fieldId);
+      const $error = $('#' + fieldId + '-error');
+      $field.removeClass('input-control--error');
+      $error.text('').hide();
+    }
+
+    // Validate form
+    function validateForm() {
+      let isValid = true;
+      clearErrors();
+
+      // Validate first name
+      const firstName = $('#first-name').val().trim();
+      if (!firstName || firstName.length < 2) {
+        const errorMsg = window.i18n ? window.i18n.t('registration.errors.firstName') : 'First name must be at least 2 characters';
+        showFieldError('first-name', errorMsg);
+        isValid = false;
+      }
+
+      // Validate last name
+      const lastName = $('#last-name').val().trim();
+      if (!lastName || lastName.length < 2) {
+        const errorMsg = window.i18n ? window.i18n.t('registration.errors.lastName') : 'Last name must be at least 2 characters';
+        showFieldError('last-name', errorMsg);
+        isValid = false;
+      }
+
+      // Validate email
+      const email = $('#email').val().trim();
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!email || !emailRegex.test(email)) {
+        const errorMsg = window.i18n ? window.i18n.t('registration.errors.email') : 'Please enter a valid email address';
+        showFieldError('email', errorMsg);
+        isValid = false;
+      }
+
+      // Validate phone
+      const phone = $('#phone').val().trim();
+      if (!phone || phone.length < 10) {
+        const errorMsg = window.i18n ? window.i18n.t('registration.errors.phone') : 'Please enter a valid phone number';
+        showFieldError('phone', errorMsg);
+        isValid = false;
+      }
+
+      // Validate message
+      const message = $('#message').val().trim();
+      if (!message || message.length < 10) {
+        const errorMsg = window.i18n ? window.i18n.t('registration.errors.message') : 'Message must be at least 10 characters';
+        showFieldError('message', errorMsg);
+        isValid = false;
+      }
+
+      // Validate privacy policy
+      if (!$('#privacy-policy').is(':checked')) {
+        const errorMsg = window.i18n ? window.i18n.t('registration.errors.privacyPolicy') : 'You must agree to the privacy policy';
+        showFieldError('privacy-policy', errorMsg);
+        $('#privacy-policy-error').text(errorMsg).show();
+        isValid = false;
+      }
+
+      return isValid;
+    }
+
+    // Real-time validation on blur
+    $form.find('input, textarea').on('blur', function() {
+      const fieldId = $(this).attr('id');
+      if (fieldId) {
+        clearFieldError(fieldId);
+        // Re-validate this field
+        validateForm();
+      }
+    });
+
+    // Clear errors on input
+    $form.find('input, textarea').on('input', function() {
+      const fieldId = $(this).attr('id');
+      if (fieldId) {
+        clearFieldError(fieldId);
+      }
+    });
+
+    // Handle privacy policy checkbox change
+    $('#privacy-policy').on('change', function() {
+      updateSubmitButtonState();
+      // Clear error if checkbox is checked
+      if ($(this).is(':checked')) {
+        clearFieldError('privacy-policy');
+        $('#privacy-policy-error').text('').hide();
+      }
+    });
+
+    // Close on button click
+    $closeBtn.on('click', function() {
+      closeModal();
+    });
+
+    // Close on overlay click
+    $overlay.on('click', function() {
+      closeModal();
+    });
+
+    // Close on Escape key
+    $(document).on('keydown', function(e) {
+      if (e.key === 'Escape' && $modal.is(':visible')) {
+        closeModal();
+      }
+    });
+
+    // Open modal on elements with data-open-registration attribute
+    $(document).on('click', '[data-open-registration]', function(e) {
+      e.preventDefault();
+      openRegistrationModal();
+    });
+
+    // Handle form submission
+    $form.on('submit', function(e) {
+      e.preventDefault();
+      
+      // Validate form
+      if (!validateForm()) {
+        const errorMsg = window.i18n ? window.i18n.t('registration.errors.general') : 'Please fill in all fields correctly';
+        $('#form-error').text(errorMsg).show();
+        return;
+      }
+
+      // Hide previous messages
+      hideMessages();
+
+      // Serialize form data
+      const formData = $form.serialize();
+
+      // Set loading state
+      setSubmitState(true);
+
+      // Send AJAX request
+      $.ajax({
+        url: 'send-email.php',
+        type: 'POST',
+        data: formData,
+        dataType: 'json',
+        success: function(response) {
+          setSubmitState(false);
+          
+          if (response.success) {
+            const successMsg = window.i18n ? window.i18n.t('registration.success') : 'Thank you for your message! We will contact you soon.';
+            $('#form-success').text(successMsg).show();
+            $form[0].reset();
+            
+            // Close modal after 2 seconds
+            setTimeout(function() {
+              closeModal();
+            }, 2000);
+          } else {
+            const errorMsg = response.message || (window.i18n ? window.i18n.t('registration.errors.server') : 'An error occurred. Please try again.');
+            $('#form-error').text(errorMsg).show();
+          }
+        },
+        error: function(xhr, status, error) {
+          setSubmitState(false);
+          const errorMsg = window.i18n ? window.i18n.t('registration.errors.server') : 'An error occurred. Please try again later.';
+          $('#form-error').text(errorMsg).show();
+          console.error('Form submission error:', error);
+        }
+      });
+    });
+  }
+
+  // Initialize mobile navigation
+  function initMobileNavigation() {
+    const $navList = $('[data-nav-list]');
+    const $openNavListBtn = $('.nav__mobile-button');
+    const $navMobile = $openNavListBtn.parents('.nav__mobile');
+
+    // Toggle mobile menu
+    $openNavListBtn.on('click', function() {
+      $navList.toggleClass('nav__list--active');
+      $navMobile.toggleClass('nav__mobile--active');
+    });
+
+    // Close mobile menu when clicking on a navigation link
+    $navList.find('.nav__link, .btn').on('click', function() {
+      if (isMobile()) {
+        $navList.removeClass('nav__list--active');
+        $navMobile.removeClass('nav__mobile--active');
+      }
+    });
+  }
+
+  // Initialize about us cards slider
+  function initAboutUsSlider() {
+    const $slider = $('.about-us__cards-slider-mobile');
+    
+    if ($slider.length === 0) {
+      return;
+    }
+
+    // Check if slick is available
+    if (typeof $.fn.slick === 'undefined') {
+      console.warn('Slick slider is not loaded');
+      return;
+    }
+
+    $slider.slick({
+      dots: true,
+      infinite: true,
+      speed: 300,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      adaptiveHeight: true,
+      arrows: true,
+      autoplay: false,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+      ]
+    });
+  }
 
 })(jQuery);

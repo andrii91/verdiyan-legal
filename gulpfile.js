@@ -43,6 +43,8 @@ gulp.task('sass', function () {
 gulp.task('js', function() {
   return gulp.src([
       'node_modules/jquery/dist/jquery.min.js',
+      'node_modules/jquery.inputmask/dist/jquery.inputmask.bundle.js',
+      'node_modules/slick-carousel/slick/slick.min.js',
       'src/libs/**/*.js',
       'src/js/**/*.js',
       '!src/js/i18n.js' // Exclude i18n.js from main bundle
@@ -119,6 +121,12 @@ gulp.task('pages', function() {
     .pipe(gulp.dest('dist'));
 });
 
+// PHP files task
+gulp.task('php', function() {
+  return gulp.src('src/**/*.php')
+    .pipe(gulp.dest('dist'));
+});
+
 // Serve task
 gulp.task('serve', function() {
   return gulp.src('dist')
@@ -133,12 +141,13 @@ gulp.task('serve', function() {
 // Build task
 gulp.task('build', gulp.series(
   'clean',
-  gulp.parallel('sass', 'js', 'js-i18n', 'images-all', 'images-optimize', 'fonts', 'locales', 'pages')
+  gulp.parallel('sass', 'js', 'js-i18n', 'images-all', 'images-optimize', 'fonts', 'locales', 'pages', 'php')
 ));
 
 // Watch task
 gulp.task('watch', function() {
   gulp.watch('src/**/*.html', gulp.series('pages'));
+  gulp.watch('src/**/*.php', gulp.series('php'));
   gulp.watch(['src/js/**/*.js', '!src/js/i18n.js'], gulp.series('js'));
   gulp.watch('src/js/i18n.js', gulp.series('js-i18n'));
   gulp.watch('src/libs/**/*.js', gulp.series('js'));

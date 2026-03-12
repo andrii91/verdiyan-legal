@@ -4,9 +4,6 @@ package-lock.json
 yarn.lock
 .npm-cache/
 
-# Build output
-dist/
-
 # Logs
 *.log
 npm-debug.log*
