@@ -54,16 +54,18 @@
 
 // Dark Theme - Outline
 .btn-cta--dark-outline {
-  background-color: $fiord-900;
-  color: $white-000;
-  border: 1px solid $white-000;
+  background-color: transparent;
+  color: $fiord-900;
+  border: 1px solid $fiord-900;
   
   &:hover:not(:disabled) {
-    background-color: $fiord-800;
+    background-color: $fiord-050;
+    border-color: $fiord-900;
   }
   
   &:active:not(:disabled) {
-    background-color: $fiord-800;
+    background-color: $fiord-050;
+    border-color: $fiord-900;
   }
   
   &:disabled {

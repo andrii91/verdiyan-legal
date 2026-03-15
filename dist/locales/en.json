@@ -108,6 +108,104 @@
     "privacyPolicy": "Privacy Policy",
     "cookies": "Cookies"
   },
+  "privacyPolicy": {
+    "title": "Information on Personal Data Processing",
+    "introduction": {
+      "title": "Purpose of the Document and Personal Data Protection",
+      "paragraph1": "The purpose of this document is to provide clients and other persons with information on personal data processing within the scope set out in Article 13 of Regulation (EU) 2016/679 of the European Parliament and of the Council on the protection of natural persons with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (General Data Protection Regulation) (hereinafter referred to as \"GDPR\" or \"Regulation\"), in particular information on what personal data we process, on what legal basis we process it, for what purposes we use it, to whom we transfer it, and what your rights are in relation to the personal data we process.",
+      "paragraph2": "The law firm, as the controller of personal data that will be provided to it, undertakes to process such personal data in accordance with legal regulations, in particular Act No. 85/1996 Coll. (Act on Advocacy), Act No. 110/2019 Coll., on Personal Data Processing, and the Regulation. All persons who participate in the processing of personal data within the scope of their work or contractual obligations are subject to legal or contractual confidentiality obligations."
+    },
+    "controller": {
+      "title": "IDENTITY AND CONTACT DETAILS OF THE PERSONAL DATA CONTROLLER",
+      "intro": "The controller of your personal data is",
+      "name": "Name:",
+      "ico": "ID No.:",
+      "address": "Address:",
+      "email": "E-mail:"
+    },
+    "purpose": {
+      "title": "PURPOSE OF PERSONAL DATA PROCESSING",
+      "intro": "The purpose of processing your personal data is",
+      "item1": "fulfillment of contractual obligations under a contract concluded between you and the controller, in particular in connection with the legal service provided. This purpose also includes keeping records in the controller's client database and subsequent archiving of data in accordance with legal regulations.",
+      "item2": "fulfillment of obligations established by legal regulations in connection with the legal service provided."
+    },
+    "legalBasis": {
+      "title": "LEGAL BASIS FOR PERSONAL DATA PROCESSING",
+      "intro": "The legal basis for processing personal data is:",
+      "item1": "Contract for the provision of legal services - processing is necessary for the performance of a contract between you and the controller (or for taking steps by the controller prior to entering into such a contract) within the meaning of Article 6(1)(b) GDPR.",
+      "item2": "processing of personal data necessary for compliance with obligations established by legal regulations within the meaning of Article 6(1)(c) GDPR."
+    },
+    "recipients": {
+      "title": "CATEGORIES OF PERSONAL DATA RECIPIENTS",
+      "intro": "The controller may further transfer personal data to third parties if this follows from legal regulations or from the nature of the given personal data processing, which may include:",
+      "item1": "public authorities (e.g., courts, criminal prosecution authorities, enforcement officers, administrative authorities, supervisory authorities)",
+      "item2": "persons participating in the delivery of services or payment processing under a contract concluded with the data subject,",
+      "item3": "entities ensuring maintenance of the controller's information system,",
+      "item4": "other recipients according to the needs and instructions of the client."
+    },
+    "retention": {
+      "title": "PERIOD OF PERSONAL DATA PROCESSING",
+      "text": "Your personal data will be processed for the duration of the contractual relationship and, after its termination, will be handled in accordance with applicable legal regulations, in particular Act No. 85/1996 Coll. (Act on Advocacy), Act No. 499/2004 Coll. (Act on Archiving and Records Management and on Amendments to Certain Acts) and the Regulation."
+    },
+    "rights": {
+      "title": "RIGHTS in connection with Personal Data Processing",
+      "intro": "Under the conditions set out in Articles 15 to 22 GDPR, you have the right",
+      "item1": "to request access to your personal data processed by the controller,",
+      "item2": "to request a copy of such personal data,",
+      "item3": "to request correction of inaccurate personal data,",
+      "item4": "to request erasure of personal data processed by the controller if they are no longer necessary for the purpose for which they were provided, or if they are processed unlawfully by the controller,",
+      "item5": "to request restriction of processing of your personal data in cases set out in Article 18 GDPR,",
+      "item6": "to data portability of your personal data that you have provided on the basis of consent or a contract, and in this connection to have them provided in a commonly used format,",
+      "item7": "to object to processing of your personal data for direct marketing purposes, including profiling, if profiling relates to such direct marketing. If you object to processing of your personal data for direct marketing purposes, your personal data will no longer be processed for these purposes.",
+      "paragraph1": "The right to withdraw consent to personal data processing at any time does not apply, as the client's personal data are processed for the purpose of fulfilling a contract concluded with the client, not on the basis of consent to processing.",
+      "paragraph2": "If you believe that processing of your personal data has violated or is violating the GDPR Regulation, you have, among other things, the right to file a complaint with the supervisory authority, which is the Office for Personal Data Protection.",
+      "paragraph3": "You can exercise your rights in person at the controller's registered office, or at the address indicated in writing with a certified signature or by email to the controller's email address indicated above, or through the controller's data mailbox. The controller is authorized and obliged to request verification of your identity in connection with the exercise of your rights."
+    },
+    "consent": {
+      "title": "Consent",
+      "subtitle": "This website uses cookies",
+      "text": "On the law firm's website, we use cookies to analyze website traffic and obtain statistical data. We need your active consent to use them. You can, of course, visit the pages with only necessary cookies; however, in such a case, we cannot guarantee that all integrated services, especially external ones, will work reliably.",
+      "optionsTitle": "Available options:",
+      "reject": "Reject",
+      "rejectDesc": "rejects all optional cookies",
+      "select": "Allow selection",
+      "selectDesc": "allows only selected cookie categories",
+      "allowAll": "Allow all",
+      "allowAllDesc": "allows all cookie categories"
+    },
+    "cookiesSettings": {
+      "title": "Cookie Settings",
+      "subtitle": "More about cookies",
+      "text1": "Cookies are small text files that can be used by websites to make the user experience more efficient.",
+      "text2": "The law states that we can store cookies on your device if they are strictly necessary for the operation of this site. For all other types of cookies, we need your permission.",
+      "text3": "This site uses various types of cookies. Some cookies are placed by third-party services that appear on our pages.",
+      "text4": "You can change or withdraw your consent at any time through the Cookie Statement on our website.",
+      "text5": "Find out more in our privacy policy about who we are, how you can contact us, and how we process your personal data.",
+      "text6": "Please provide your consent ID and the date when you will contact us regarding your consent.",
+      "details": "Details",
+      "necessary": "Necessary",
+      "necessaryDesc": "Necessary cookies help make a website usable by enabling basic functions such as page navigation and access to secure areas of the website. The website cannot function properly without these cookies.",
+      "preferential": "Preferential",
+      "preferentialDesc": "Preferential cookies allow a website to remember information that changes how the website behaves or looks. This is, for example, your preferred language or the region where you are located.",
+      "statistical": "Statistical",
+      "statisticalDesc": "Statistical cookies help website owners understand how visitors use websites. They collect and report information anonymously.",
+      "marketing": "Marketing",
+      "marketingDesc": "Marketing cookies are used to track visitors on websites. The intention is to display ads that are relevant and interesting to individual users and thus more valuable for publishers and third-party advertisers.",
+      "unclassified": "Unclassified",
+      "unclassifiedDesc": "Unclassified cookies are cookies that we are in the process of classifying together with the providers of individual cookies."
+    },
+    "nav": {
+      "title": "Content",
+      "item1": "Identity and contact details of the controller",
+      "item2": "Purpose of personal data processing",
+      "item3": "Legal basis for personal data processing",
+      "item4": "Categories of personal data recipients",
+      "item5": "Period of personal data processing",
+      "item6": "Rights in connection with personal data processing",
+      "item7": "Consent - Cookies",
+      "item8": "Cookie Settings"
+    }
+  },
   "common": {
     "loading": "Loading...",
     "error": "Error"

@@ -89,28 +89,31 @@
     <symbol id="icon-close-menu" viewBox="0 0 32 32" fill="none">
       <path d="M24 8L8.00108 23.9989M23.9989 24L8 8.00113" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
     </symbol>
+    <symbol id="icon-arrow-up" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M11.9967 10.8284L7.04702 15.7782L5.63281 14.364L11.9967 8L18.3607 14.364L16.9465 15.7782L11.9967 10.8284Z" fill="black"/>
+      </symbol>
       
   </svg>
 </head>
 <body>
-  <nav class="nav">
+  <nav class="nav nav-light">
     <div class="container">
       <div class="nav__inner">
         <a href="/" class="nav__logo fade-in-up">
-          <img loading="lazy" src="images/logo.svg" alt="Verdiyan Legal">
+          <img loading="lazy" src="images/logo-light.svg" alt="Verdiyan Legal">
         </a>
         <ul class="nav__list fade-in-up" data-nav-list>
           <li class="nav__item">
-            <a href="#specializations" class="nav__link" data-i18n="nav.specializations">Specializace</a>
+            <a href="index.html#specializations" class="nav__link" data-i18n="nav.specializations">Specializace</a>
           </li>
           <li class="nav__item">
-            <a href="#about-us" class="nav__link" data-i18n="nav.about">O nás</a>
+            <a href="index.html#about-us" class="nav__link" data-i18n="nav.about">O nás</a>
           </li>
           <li class="nav__item">
-            <a href="#services" class="nav__link" data-i18n="nav.services">Služby</a>
+            <a href="index.html#services" class="nav__link" data-i18n="nav.services">Služby</a>
           </li>
           <li class="nav__item">
-            <a href="#contact-us" class="nav__link" data-i18n="nav.contacts">Kontakty</a>
+            <a href="index.html#contact-us" class="nav__link" data-i18n="nav.contacts">Kontakty</a>
           </li>
           <li class="nav__item nav__item--select">
             <select class="nav__select">
@@ -119,10 +122,10 @@
             </select>
           </li>
           <li class="nav__item nav__item--button">
-            <a href="#consumer-representation" data-open-registration class="btn btn-cta btn-cta--violet-primary" data-i18n="nav.consumerRepresentation">Zastupování spotřebitelů</a>
+            <a href="index.html#consumer-representation" data-open-registration class="btn btn-cta btn-cta--dark-outline" data-i18n="nav.consumerRepresentation">Zastupování spotřebitelů</a>
           </li>
           <li class="nav__item nav__item--button">
-            <a href="#contact-us"  class="btn btn-cta btn-cta--white-outline" data-i18n="nav.contactUs">Kontaktujte nás</a>
+            <a href="index.html#contact-us"  class="btn btn-cta btn-cta--white-outline" data-i18n="nav.contactUs">Kontaktujte nás</a>
           </li>
         </ul>
 
@@ -142,353 +145,155 @@
       </div>
     </div>
   </nav>
-  <!-- Landing page content will be here -->
-  <header class="header">
-    <div class="container">
-      <div class="header__inner">
-        <div class="header__content">
-          <h1 class="header__title fade-in-up" data-i18n="header.title">Verdiyan Legal</h1>
-          <p class="header__description fade-in-up" data-i18n="header.description">Advokátní kancelář poskytuje právní služby klientům z řad fyzických osob i obchodních společností, a to s důrazem na vysokou odbornou úroveň, strategický přístup a srozumitelnou komunikaci.</p>
-          <div class="header__cta fade-in-up">
-            <a href="#consumer-representation" data-open-registration class="btn btn-cta btn-cta--violet-primary lg-hidden" data-i18n="nav.consumerRepresentation">Zastupování spotřebitelů</a>
-            <a href="#contact-us"  class="btn btn-cta btn-cta--white-outline" data-i18n="nav.contactUs">Kontaktujte nás</a>
-          </div>
-        </div>
-        <div class="header__image fade-in-up">
-          <img loading="lazy" src="images/header-image.svg" alt="Verdiyan Legal">
-        </div>
-      </div>
-    </div>
-  </header>
-    
-  <main>
-    <section class="section specializations" id="specializations">
+
+    <section class="privacy-policy">
       <div class="container">
-        <div class="specializations__icon fade-in-up">
-          <svg class="icon">
-            <use href="#icon-specializations" />
-          </svg>
-        </div>
-        <h2 class="specializations__title fade-in-up" data-i18n="specializations.title">Specializace</h2>
-        <p class="specializations__description fade-in-up" data-i18n="specializations.description">Specializujeme se na poskytování právních služeb v široké oblasti. Pomáháme klientům řešit právní otázky týkající se majetkových práv, smluvních vztahů, dědictví a dalších oblastí občanského práva. Zajišťujeme přípravu a revizi smluv, zastupování ve sporech a ochranu osobních práv a majetkových zájmů.</p>
+        <div class="privacy-policy__inner">
+          <div class="privacy-policy__text">
+            <h2 data-i18n="privacyPolicy.title">Informace o zpracování osobních údajů</h2>
+            
+            <h3 data-i18n="privacyPolicy.introduction.title">Účel dokumentu a Ochrana osobních údajů</h3>
+            <p data-i18n="privacyPolicy.introduction.paragraph1">Účelem tohoto dokumentu je poskytnout klientům a dalším osobám, informace o zpracování osobních údajů v rozsahu stanoveném v čl. 13 Nařízení Evropského parlamentu a Rady (EU) 2016/679 o ochraně fyzických osob v souvislosti se zpracováním osobních údajů a o volném pohybu těchto údajů a o zrušení směrnice 95/46/ES (obecné nařízení o ochraně osobních údajů) (dále jen „GDPR" nebo „nařízení"), tedy zejména informace o tom jaké osobní údaje zpracováváme, na základě jakého právního titulu je zpracováváme, k jakým účelům je využíváme, komu je předáváme a jaká jsou Vaše práva ve vztahu námi zpracovávaným osobním údajům.</p>
+            <p data-i18n="privacyPolicy.introduction.paragraph2">Advokátní kancelář se jakožto správce osobních údajů, které mu budou poskytnuty, zavazuje, že bude tyto osobní údaje zpracovávat v souladu s právními předpisy, především se zákonem č. 85/1996 Sb. (zákon o advokacii), zákonem č. 110/2019 SB., o zpracování osobních údajů, a nařízením. Všechny osoby, které se v rámci svých pracovních či smluvních povinností podílejí na zpracování osobních údajů, podléhají zákonné či smluvní povinnosti mlčenlivosti.</p>
 
-        <div class="specializations__inner">
-          <!-- Civil Law -->
-          <div class="specializations__item fade-in-up">
-            <div class="specializations__item-icon">
-              <svg class="icon" >
-                <use href="#icon-civil" />
-              </svg>
+            <div id="header-1" class="privacy-policy__text-item">
+              <h3 data-i18n="privacyPolicy.controller.title">TOTOŽNOST A KONTAKTNÍ ÚDAJE SPRÁVCE osobních údajů</h3>
+              <p data-i18n="privacyPolicy.controller.intro">Správcem Vašich osobních údajů je</p>
+              <p><strong data-i18n="privacyPolicy.controller.name">Název:</strong> Verdiyan Legal s.r.o.<br>
+              <strong data-i18n="privacyPolicy.controller.ico">IČO:</strong><br>
+              <strong data-i18n="privacyPolicy.controller.address">Adresa:</strong> Rybná 678/8, 11000 Praha 1, ČR<br>
+              <strong data-i18n="privacyPolicy.controller.email">E-mail:</strong> info@verdiyan-legal.cz</p>
             </div>
-            <h3 class="specializations__item-title" data-i18n="specializations.civil.title">Občanské právo</h3>
-            <ul class="specializations__item-list">
-              <li data-i18n="specializations.civil.description1">Poskytujeme právní poradenství a zastoupení v oblasti občanského práva, zejména ve věcech smluvních vztahů, ochrany majetkových práv, náhrady škody, dědictví a dalších civilních agend.</li>
-              <li data-i18n="specializations.civil.description2">Zajišťujeme přípravu a revizi smluv, právní analýzy, zastupování v soudních sporech i mimosoudní řešení sporů.</li>
-            </ul>
+
+            <div id="header-2" class="privacy-policy__text-item">
+              <h3 data-i18n="privacyPolicy.purpose.title">ÚČEL ZPRACOVÁNÍ OSOBNÍCH ÚDAJŮ</h3>
+              <p data-i18n="privacyPolicy.purpose.intro">Účelem zpracování Vašich osobních údajů je</p>
+              <ul>
+                <li data-i18n="privacyPolicy.purpose.item1">plnění smluvních povinností ze smlouvy uzavřené mezi Vámi a správcem, zejména v souvislosti s poskytovanou právní službou. Tento účel zahrnuje také evidenci v databázi klientů správce a následnou archivaci údajů dle právních předpisů.</li>
+                <li data-i18n="privacyPolicy.purpose.item2">plnění právními předpisy stanovených povinností v souvislosti s poskytovanou právní službou.</li>
+              </ul>
+            </div>
+
+            <div id="header-3" class="privacy-policy__text-item">
+              <h3 data-i18n="privacyPolicy.legalBasis.title">Právní základ ZPRACOVÁNÍ OSOBNÍCH ÚDAJŮ</h3>
+              <p data-i18n="privacyPolicy.legalBasis.intro">Právním základem zpracování osobních údajů je:</p>
+              <ul>
+                <li data-i18n="privacyPolicy.legalBasis.item1">Smlouva o poskytování právních služeb - zpracování je nezbytné pro splnění smlouvy mezi Vámi a správcem (nebo pro provedení opatření správcem před uzavřením takové smlouvy ve smyslu čl. 6 odst. 1 písm. b) GDPR.</li>
+                <li data-i18n="privacyPolicy.legalBasis.item2">zpracování osobních údajů nezbytné pro plnění povinností stanovených právními předpisy ve smyslu čl. 6 odst. 1 písm. c) GDPR.</li>
+              </ul>
+            </div>
+
+            <div id="header-4" class="privacy-policy__text-item">
+              <h3 data-i18n="privacyPolicy.recipients.title">KATEGORIE PŘÍJEMCŮ OSOBNÍCH ÚDAJŮ</h3>
+              <p data-i18n="privacyPolicy.recipients.intro">Správce může dále předávat osobní údaje třetím stranám, pokud to vyplývá z právních předpisů nebo z povahy daného zpracování osobních údajů, kterými mohou být:</p>
+              <ul>
+                <li data-i18n="privacyPolicy.recipients.item1">orgány veřejné moci (např. soudy, orgány činné v trestním řízení, exekutoři, správní orgány, orgány dohledu)</li>
+                <li data-i18n="privacyPolicy.recipients.item2">osoby podílející se na dodání služby či realizaci plateb na základě smlouvy uzavřené se subjektem údajů,</li>
+                <li data-i18n="privacyPolicy.recipients.item3">subjekty zajišťující údržbu informačního systému správce,</li>
+                <li data-i18n="privacyPolicy.recipients.item4">další příjemci dle potřeb a pokynů klienta.</li>
+              </ul>
+            </div>
+
+            <div id="header-5" class="privacy-policy__text-item">
+              <h3 data-i18n="privacyPolicy.retention.title">DOBA ZPRACOVÁNÍ OSOBNÍCH ÚDAJŮ</h3>
+              <p data-i18n="privacyPolicy.retention.text">Vaše osobní údaje budou zpracovávány po dobu trvání smluvního vztahu a následně po jeho skončení s nimi bude naloženo dle platné právní úpravy, zejm. zákona č. 85/1996 Sb. (zákon o advokacii), zákona č. 499/2004 Sb. (zákon o archivnictví a spisové službě a o změně některých zákonů) a nařízení.</p>
+            </div>
+
+            <div id="header-6" class="privacy-policy__text-item">
+              <h3>PRÁVA v souvislosti se zpracováním Osobních údajů</h3>
+              <p>Za podmínek uvedených v čl. 15 až 22 GDPR máte právo</p>
+              <ul>
+                <li>požádat správce o přístup k Vašim osobním údajům zpracovávaným správcem,</li>
+                <li>požádat správce o kopii těchto osobních údajů,</li>
+                <li>požádat správce o opravu nepřesných osobních údajů,</li>
+                <li>požádat správce o výmaz osobních údajů zpracovávaných správcem, pokud již nejsou potřebné pro poskytnutý účel, nebo pokud jsou správcem zpracovávány protiprávně,</li>
+                <li>požádat správce o omezení zpracování svých osobních údajů v případech stanovených v čl. 18 GDPR,</li>
+                <li>na přenositelnost Vašich osobních údajů, které jste poskytli na základě souhlasu nebo smlouvy, a v této souvislosti na jejich poskytnutí v běžně užívaném formátu,</li>
+                <li>vnést námitku proti zpracování Vašich osobních údajů pro účely přímého marketingu, včetně profilování, pokud se profilování týká tohoto přímého marketingu. Pokud vznesete námitku proti zpracování Vašich osobních údajů pro účely přímého marketingu, nebudou již Vaše osobní údaje pro tyto účely dále zpracovávány.</li>
+              </ul>
+              <p>Právo kdykoli odvolat souhlas se zpracováním osobních údajů se neuplatní, jelikož osobní údaje klienta jsou zpracovávány z důvodu plnění smlouvy uzavřené s klientem, nikoli na základě souhlasu se zpracováním.</p>
+              <p>Pokud byste se domníval(a), že zpracováním Vašich osobních údajů bylo porušeno či je porušováno nařízení GDPR, máte mimo jiné právo podat stížnost u dozorového orgánu, kterým je Úřad pro ochranu osobních údajů.</p>
+              <p>Své práva můžete uplatnit osobně v sídle správce, případně na uvedené adrese písemně s úředně ověřeným podpisem nebo emailem na shora uvedené emailové adrese správce nebo prostřednictvím datové schránky správce. Správce je oprávněn a povinen v souvislosti s uplatněním Vašich práv požadovat ověření Vaší totožnosti.</p>
+            </div>
+
+            <div id="header-7" class="privacy-policy__text-item">
+              <h3 data-i18n="privacyPolicy.consent.title">Souhlas</h3>
+              <h4 data-i18n="privacyPolicy.consent.subtitle">Tato webová stránka používá cookies</h4>
+              <p data-i18n="privacyPolicy.consent.text">Na webových stránkách advokátní kanceláře používáme cookies k analýze návštěvnosti webu a získávání statistických dat. Potřebujeme váš aktivní souhlas s jejich využíváním. Stránky pochopitelně můžete navštěvovat i jen s nutnými cookies; v takovém případě ale nemůžeme garantovat, že všechny integrované služby, zejména externího charakteru, budou fungovat spolehlivě.</p>
+              <p><strong data-i18n="privacyPolicy.consent.optionsTitle">Dostupné možnosti:</strong></p>
+              <ul>
+                <li><strong data-i18n="privacyPolicy.consent.reject">Odmítnout</strong> – <span data-i18n="privacyPolicy.consent.rejectDesc">odmítne všechny volitelné cookies</span></li>
+                <li><strong data-i18n="privacyPolicy.consent.select">Povolit výběr</strong> – <span data-i18n="privacyPolicy.consent.selectDesc">povolí pouze vybrané kategorie cookies</span></li>
+                <li><strong data-i18n="privacyPolicy.consent.allowAll">Povolit vše</strong> – <span data-i18n="privacyPolicy.consent.allowAllDesc">povolí všechny kategorie cookies</span></li>
+              </ul>
+            </div>
+
+            <div id="header-8" class="privacy-policy__text-item">
+              <h3 data-i18n="privacyPolicy.cookiesSettings.title">Nastavení cookies</h3>
+              <h4 data-i18n="privacyPolicy.cookiesSettings.subtitle">Více o cookies</h4>
+              <p data-i18n="privacyPolicy.cookiesSettings.text1">Cookies jsou malé textové soubory, které mohou být používány webovými stránkami, aby učinily uživatelský zážitek více efektivní.</p>
+              <p data-i18n="privacyPolicy.cookiesSettings.text2">Zákon uvádí, že můžeme ukládat cookies na vašem zařízení, pokud jsou nezbytně nutné pro provoz této stránky. Pro všechny ostatní typy cookies potřebujeme vaše povolení.</p>
+              <p data-i18n="privacyPolicy.cookiesSettings.text3">Tato stránka používá různé typy cookies. Některé cookies jsou umístěny službami třetích stran, které se objevují na našich stránkách.</p>
+              <p data-i18n="privacyPolicy.cookiesSettings.text4">Kdykoliv můžete změnit nebo zrušit svůj souhlas prostřednictvím Vyjádření o souborech cookie na našich webových stránkách.</p>
+              <p data-i18n="privacyPolicy.cookiesSettings.text5">Zjistěte v našich zásadách ochrany osobních údajů více o tom, kdo jsme, jak nás můžete kontaktovat a jak zpracováváme vaše osobní údaje.</p>
+              <p data-i18n="privacyPolicy.cookiesSettings.text6">Uveďte prosím ID svého souhlasu a datum, kdy nás budete kontaktovat ohledně vašeho souhlasu.</p>
+              
+              <h4 data-i18n="privacyPolicy.cookiesSettings.details">Detaily</h4>
+              <p><strong data-i18n="privacyPolicy.cookiesSettings.necessary">Nutné</strong><br>
+              <span data-i18n="privacyPolicy.cookiesSettings.necessaryDesc">Nutné cookies pomáhají, aby byla webová stránka použitelná tak, že umožní základní funkce jako navigace stránky a přístup k zabezpečeným sekcím webové stránky. Webová stránka nemůže správně fungovat bez těchto cookies.</span></p>
+              
+              <p><strong data-i18n="privacyPolicy.cookiesSettings.preferential">Preferenční</strong><br>
+              <span data-i18n="privacyPolicy.cookiesSettings.preferentialDesc">Preferenční cookies umožňují, aby si webová stránka zapamatovala informace, které mění, jak se webová stránka chová nebo jak vypadá. Je to například preferovaný jazyk nebo region, kde se nacházíte.</span></p>
+              
+              <p><strong data-i18n="privacyPolicy.cookiesSettings.statistical">Statistické</strong><br>
+              <span data-i18n="privacyPolicy.cookiesSettings.statisticalDesc">Statistické cookies pomáhají majitelům webových stránek, aby porozuměli, jak návštěvníci používají webové stránky. Anonymně sbírají a sdělují informace.</span></p>
+              
+              <p><strong data-i18n="privacyPolicy.cookiesSettings.marketing">Marketingové</strong><br>
+              <span data-i18n="privacyPolicy.cookiesSettings.marketingDesc">Marketingové cookies jsou používány pro sledování návštěvníků na webových stránkách. Záměrem je zobrazit reklamu, která je relevantní a zajímavá pro jednotlivého uživatele a tímto hodnotnější pro vydavatele a inzerenty třetích stran.</span></p>
+              
+              <p><strong data-i18n="privacyPolicy.cookiesSettings.unclassified">Neklasifikované</strong><br>
+              <span data-i18n="privacyPolicy.cookiesSettings.unclassifiedDesc">Neklasifikované cookies jsou cookies, které máme v procesu klasifikování společně s poskytovateli jednotlivých cookies.</span></p>
+            </div>
           </div>
-
-          <!-- Commercial Law -->
-          <div class="specializations__item fade-in-up">
-            <div class="specializations__item-icon">
+          <div class="privacy-policy__nav">
+            <h3 class="privacy-policy__nav-title privacy-policy__nav-title--active">
+              <span data-i18n="privacyPolicy.nav.title">Obsah </span>
               <svg class="icon">
-                <use href="#icon-commercial" />
+                <use class="icon-arrow-up" href="#icon-arrow-up" />
               </svg>
-            </div>
-            <h3 class="specializations__item-title" data-i18n="specializations.commercial.title">Obchodní právo</h3>
-            <ul class="specializations__item-list">
-              <li data-i18n="specializations.commercial.description1">V oblasti obchodního práva poskytujeme právní služby podnikatelům i obchodním společnostem. Zaměřujeme se zejména na obchodní smlouvy, korporátní agendu, zakládání společností, změny ve struktuře společnosti a poradenství při podnikatelských transakcích.</li>
-              <li data-i18n="specializations.commercial.description2">Zastupujeme klienty při jednání s obchodními partnery, v řízeních před soudy a při řešení obchodních sporů.</li>
-            </ul>
-          </div>
-
-          <!-- Family Law -->
-          <div class="specializations__item fade-in-up">
-            <div class="specializations__item-icon">
-              <svg class="icon">
-                <use href="#icon-family" />
-              </svg>
-            </div>
-            <h3 class="specializations__item-title" data-i18n="specializations.family.title">Rodinné právo</h3>
-            <ul class="specializations__item-list">
-              <li data-i18n="specializations.family.description1">Rodinné právo vyžaduje nejen odborný přístup, ale i citlivé vedení celé věci. Poskytujeme právní podporu v otázkách rozvodu, úpravy péče o nezletilé děti, výživného, styku s dítětem a majetkového vypořádání.</li>
-              <li data-i18n="specializations.family.description2">Pomáháme klientům hledat řešení, které je právně správné a současně přiměřené okolnostem konkrétní rodinné situace.</li>
-            </ul>
-          </div>
-
-          <!-- Intellectual Property Law -->
-          <div class="specializations__item fade-in-up">
-            <div class="specializations__item-icon">
-              <svg class="icon">
-                <use href="#icon-intellectual" />
-              </svg>
-            </div>
-            <h3 class="specializations__item-title" data-i18n="specializations.intellectual.title">Právo duševního vlastnictví</h3>
-            <ul class="specializations__item-list">
-              <li data-i18n="specializations.intellectual.description1">Zajišťujeme právní ochranu v oblasti autorského práva, ochranných známek, průmyslových vzorů a dalších práv duševního vlastnictví.</li>
-              <li data-i18n="specializations.intellectual.description2">Klientům poskytujeme poradenství při registraci práv, jejich správě, licencování i při vymáhání nároků v případě porušení práv, včetně zastupování ve sporech.</li>
-            </ul>
-          </div>
-
-          <!-- Labor Law -->
-          <div class="specializations__item fade-in-up">
-            <div class="specializations__item-icon">
-              <svg class="icon">
-                <use href="#icon-labor" />
-              </svg>
-            </div>
-            <h3 class="specializations__item-title" data-i18n="specializations.labor.title">Pracovní právo</h3>
-            <ul class="specializations__item-list">
-              <li data-i18n="specializations.labor.description1">Advokátní kancelář Verdiyan Legal má zkušenosti se zastupováním zaměstnavatelů i zaměstnanců při řešení pracovněprávních sporů, a to jak v předsoudní fázi, tak v řízeních před soudy.</li>
-              <li data-i18n="specializations.labor.description2">Poskytujeme poradenství zejména ve věcech ukončení pracovního poměru, pracovních smluv, náhrad škody, interních předpisů a pracovních sporů.</li>
-            </ul>
-          </div>
-
-          <!-- Advertising and Tobacco Law -->
-          <div class="specializations__item fade-in-up">
-            <div class="specializations__item-icon">
-              <svg class="icon">
-                <use href="#icon-advertising" />
-              </svg>
-            </div>
-            <h3 class="specializations__item-title" data-i18n="specializations.advertising.title">Reklamní a tabákové právo</h3>
-            <ul class="specializations__item-list">
-              <li data-i18n="specializations.advertising.description1">Poskytujeme specializované právní poradenství v oblasti regulace reklamy a tabákových výrobků, včetně souvisejících správních řízení a komunikace s dozorovými orgány.</li>
-              <li data-i18n="specializations.advertising.description2">Zastupujeme klienty při posuzování souladu marketingových kampaní s právními předpisy, při řešení sporů a při nastavování interních procesů compliance. Zkušenosti v této oblasti vycházejí mimo jiné z dlouhodobé spolupráce s nadnárodními subjekty.</li>
+            </h3>
+            <ul class="privacy-policy__nav-list">
+              <li class="privacy-policy__nav-item">
+                <a href="#header-1" class="privacy-policy__nav-link scroll-link" data-i18n="privacyPolicy.nav.item1">Totožnost a kontaktní údaje správce</a>
+              </li>
+              <li class="privacy-policy__nav-item">
+                <a href="#header-2" class="privacy-policy__nav-link scroll-link" data-i18n="privacyPolicy.nav.item2">Účel zpracování osobních údajů</a>
+              </li>
+              <li class="privacy-policy__nav-item">
+                <a href="#header-3" class="privacy-policy__nav-link scroll-link" data-i18n="privacyPolicy.nav.item3">Právní základ zpracování osobních údajů</a>
+              </li>
+              <li class="privacy-policy__nav-item">
+                <a href="#header-4" class="privacy-policy__nav-link scroll-link" data-i18n="privacyPolicy.nav.item4">Kategorie příjemců osobních údajů</a>
+              </li>
+              <li class="privacy-policy__nav-item">
+                <a href="#header-5" class="privacy-policy__nav-link scroll-link" data-i18n="privacyPolicy.nav.item5">Doba zpracování osobních údajů</a>
+              </li>
+              <li class="privacy-policy__nav-item">
+                <a href="#header-6" class="privacy-policy__nav-link scroll-link" data-i18n="privacyPolicy.nav.item6">Práva v souvislosti se zpracováním osobních údajů</a>
+              </li>
+              <li class="privacy-policy__nav-item">
+                <a href="#header-7" class="privacy-policy__nav-link scroll-link" data-i18n="privacyPolicy.nav.item7">Souhlas - Cookies</a>
+              </li>
+              <li class="privacy-policy__nav-item">
+                <a href="#header-8" class="privacy-policy__nav-link scroll-link" data-i18n="privacyPolicy.nav.item8">Nastavení cookies</a>
+              </li>
             </ul>
           </div>
         </div>
       </div>
     </section>
-
-    <div class="container">
-      <section class="banner-section fade-in-up">
-        <h3 class="banner-section__title" data-i18n="bannerSection.title">Zastupování spotřebitelů ve sporech s poskytovateli nebankovních úvěrů</h3>
-        <p class="banner-section__description" data-i18n="bannerSection.description">Samostatnou agendou advokátní kanceláře je zastupování klientů ve sporech s poskytovateli spotřebitelských úvěrů, zejména s nebankovními subjekty. Tyto služby jsou poskytovány pod obchodním označením Nourox (dříve FinHelp).</p>
-        <a href="#consumer-representation" data-open-registration class="banner-section__cta btn btn-cta btn-cta--violet-primary" data-i18n="bannerSection.cta">Zastupování spotřebitelů</a>
-      </section>
-    </div>
-
-    <section class="section about-us" id="about-us">
-      <div class="container">
-        <div class="about-us__wrap">
-          <div class="about-us__row">
-            <div class="about-us__text fade-in-up">
-              <p class="about-us__description" data-i18n="aboutUs.description">O nás</p>
-              <h2 class="about-us__title" data-i18n="aboutUs.title">Verdiyan Legal</h2>
-
-              <div class="about-us__content fade-in-up">
-                <p data-i18n="aboutUs.paragraph1">Zakládajícím partnerem advokátní kanceláře Verdiyan Legal je Mgr. Bagrat Verdiyan, advokát, který působí v advokacii od roku 2005. Od roku 2009 vykonává advokacii jako samostatný advokát. Před založením vlastní praxe získal rozsáhlé zkušenosti v rámci dlouhodobé spolupráce s přední českou advokátní kanceláří, kde se podílel na řešení právních agend významných korporátních klientů i na zastupování v rozsáhlých soudních sporech.</p>
-
-                <p data-i18n="aboutUs.paragraph2">Verdiyan Legal navazuje na tyto zkušenosti a poskytuje právní služby jak v rámci dlouhodobého právního poradenství, tak při řešení jednotlivých případů. Klientům nabízíme profesionální podporu při obchodních transakcích, v soudních sporech, při ochraně majetkových práv i v citlivých osobních a rodinných záležitostech. Naší prioritou je poskytovat právní služby, které jsou nejen právně precizní, ale zároveň praktické a efektivní.</p>
-                <p data-i18n="aboutUs.paragraph3">Advokátní kancelář poskytuje právní služby v českém, anglickém, ruském a německém jazyce.</p>               
-              </div>
-              <a href="#contact-us" class="btn btn-cta btn-cta--dark-primary" data-i18n="nav.contactUs">Kontaktujte nás</a>
-            </div>
-            <div class="about-us__card about-us__card--partner">
-              <div class="about-us__image fade-in-up">
-                <img loading="lazy" src="images/about-us-1.webp" alt="O nás">
-              </div>
-              <div class="about-us__footer fade-in-up">
-                <h6>Mgr. Bagrat Verdiyan</h6>
-                <p data-i18n="aboutUs.positions.partner">Partner | Advokát</p>
-              </div>
-            </div>
-          </div>
-          <div class="about-us__cards">
-            <div class="about-us__card lg-hidden">
-              <div class="about-us__image fade-in-up">
-                <img loading="lazy" src="images/about-us-1.webp" alt="O nás">
-              </div>
-              <div class="about-us__footer fade-in-up">
-                <h6>Mgr. Bagrat Verdiyan</h6>
-                <p data-i18n="aboutUs.positions.partner">Partner | Advokát</p>
-              </div>
-            </div>
-            <div class="about-us__card fade-in-up">
-              <div class="about-us__image fade-in-left">
-                <img loading="lazy" src="images/about-us-2.webp" alt="O nás">
-              </div>
-              <div class="about-us__footer fade-in-up">
-                <h6>Mgr. Monika Faltusová</h6>
-                <p data-i18n="aboutUs.positions.collaborating">Spolupracující advokát</p>
-              </div>
-            </div>
-            <div class="about-us__card fade-in-up">
-              <div class="about-us__image fade-in-left">
-                <img loading="lazy" src="images/about-us-3.webp" alt="O nás">
-              </div>
-              <div class="about-us__footer fade-in-up">
-                <h6>Mgr. Martin Vališ</h6>
-                <p data-i18n="aboutUs.positions.collaborating">Spolupracující advokát</p>
-              </div>
-            </div>
-            <div class="about-us__card fade-in-up">
-              <div class="about-us__image fade-in-left">
-                <img loading="lazy" src="images/about-us-4.webp" alt="O nás">
-              </div>
-              <div class="about-us__footer fade-in-up">
-                <h6>Mgr. Anastasija Levina</h6>
-                <p data-i18n="aboutUs.positions.trainee">Advokátní koncipientka</p>
-              </div>
-            </div>
-            <div class="about-us__card fade-in-up">
-              <div class="about-us__image fade-in-left">
-                <img loading="lazy" src="images/about-us-5.webp" alt="O nás">
-              </div>
-              <div class="about-us__footer fade-in-up">
-                <h6>Mgr. Olha Shymanska</h6>
-                <p data-i18n="aboutUs.positions.projectManager">Projektový manažer</p>
-              </div>
-            </div>
-          </div>
-          <div class="about-us__cards-slider-mobile lg-hidden">
-            <div class="about-us__card">
-              <div class="about-us__image">
-                <img loading="lazy" src="images/about-us-1.webp" alt="O nás">
-              </div>
-              <div class="about-us__footer">
-                <h6>Mgr. Bagrat Verdiyan</h6>
-                <p data-i18n="aboutUs.positions.partner">Partner | Advokát</p>
-              </div>
-            </div>
-            <div class="about-us__card">
-              <div class="about-us__image">
-                <img loading="lazy" src="images/about-us-2.webp" alt="O nás">
-              </div>
-              <div class="about-us__footer">
-                <h6>Mgr. Monika Faltusová</h6>
-                <p data-i18n="aboutUs.positions.collaborating">Spolupracující advokát</p>
-              </div>
-            </div>
-            <div class="about-us__card">
-              <div class="about-us__image">
-                <img loading="lazy" src="images/about-us-3.webp" alt="O nás">
-              </div>
-              <div class="about-us__footer">
-                <h6>Mgr. Martin Vališ</h6>
-                <p data-i18n="aboutUs.positions.collaborating">Spolupracující advokát</p>
-              </div>
-            </div>
-            <div class="about-us__card">
-              <div class="about-us__image">
-                <img loading="lazy" src="images/about-us-4.webp" alt="O nás">
-              </div>
-              <div class="about-us__footer">
-                <h6>Mgr. Anastasija Levina</h6>
-                <p data-i18n="aboutUs.positions.trainee">Advokátní koncipientka</p>
-              </div>
-            </div>
-            <div class="about-us__card">
-              <div class="about-us__image">
-                <img loading="lazy" src="images/about-us-5.webp" alt="O nás">
-              </div>
-              <div class="about-us__footer">
-                <h6>Mgr. Olha Shymanska</h6>
-                <p data-i18n="aboutUs.positions.projectManager">Projektový manažer</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section services" id="services">
-      <div class="container">
-        <h2 class="services__title fade-in-up" data-i18n="services.title">Služby</h2>
-        <div class="services__inner">
-          <div class="services__item fade-in-up">
-            <div class="services__item-icon">
-              <svg class="icon">
-                <use href="#icon-services-1" />
-              </svg>
-            </div>
-            <h3 class="services__item-title" data-i18n="services.item1.title">Vymáhání pohledávek a zastupování věřitelů i dlužníků</h3>
-          </div>
-          <div class="services__item fade-in-up">
-            <div class="services__item-icon">
-              <svg class="icon">
-                <use href="#icon-services-2" />
-              </svg>
-            </div>
-            <h3 class="services__item-title" data-i18n="services.item2.title">Právní due diligence a podpora při obchodních transakcích</h3>
-          </div>
-          <div class="services__item fade-in-up">
-            <div class="services__item-icon">
-              <svg class="icon">
-                <use href="#icon-services-3" />
-              </svg>
-            </div>
-            <h3 class="services__item-title" data-i18n="services.item3.title">Zastupování klientů v soudních sporech a rozhodčích řízeních</h3>
-          </div>
-          <div class="services__item fade-in-up">
-            <div class="services__item-icon">
-              <svg class="icon">
-                <use href="#icon-services-4" />
-              </svg>
-            </div>
-            <h3 class="services__item-title" data-i18n="services.item4.title">Ochrana práv duševního vlastnictví a vedení sporů v této oblasti</h3>
-          </div>
-          <div class="services__item fade-in-up">
-            <div class="services__item-icon">
-              <svg class="icon">
-                <use href="#icon-services-5" />
-              </svg>
-            </div>
-            <h3 class="services__item-title" data-i18n="services.item5.title">Zastupování českých i nadnárodních společností </h3>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
 
   <footer class="footer-bg">
-    <section class="contact-us" id="contact-us">
-      <div class="container">
-        <h2 class="contact-us__title fade-in-up" data-i18n="contactUs.title">Kontaktujte nás</h2>
-
-        <div class="contact-us__inner">
-          <div class="contact-us__address fade-in-up">
-            <div class="contact-us__address-item">
-              <div class="contact-us__address-icon">
-                <svg class="icon">
-                  <use href="#icon-location" />
-                </svg>
-              </div>
-
-              <div class="contact-us__address-text">
-                <h3 class="contact-us__address-title" data-i18n="contactUs.office.title">Kancelář</h3>
-                <div class="contact-us__address-description">
-                  <p><b data-i18n="contactUs.office.company">Verdiyan Legal s.r.o.</b></p>
-                  <p><b data-i18n="contactUs.office.address">Rybná 678/9, 110 00 Praha 1 Česká republika</b></p>
-                  <p data-i18n="contactUs.office.registration">Zapsaná v obchodním rejstříku vedeném Městským soudem v Praze, oddíl C, vložka 12345</p>
-                </div>
-              </div>
-            </div>
-            <div class="contact-us__address-item fade-in-up">
-              <div class="contact-us__address-icon">
-                <svg class="icon">
-                  <use href="#icon-services-1" />
-                </svg>
-              </div>
-
-              <div class="contact-us__address-text">
-                <h3 class="contact-us__address-title" data-i18n="contactUs.ask.title">Zeptat se</h3>
-                <div class="contact-us__address-description">
-                  <a href="mailto:info@verdiyan-legal.cz" class="link">info@verdiyan-legal.cz</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="contact-us__map fade-in-up">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2559.8488735021274!2d14.426117392178277!3d50.08911629810617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b94eab48aaec1%3A0x21cd976f48a8c4bc!2zTmEgUG_FmcOtxI3DrSAxMDQwLzEwLCAxMTAgMDAgTm92w6kgTcSbc3RvLCDQp9C10YXRltGP!5e0!3m2!1suk!2sua!4v1773234819545!5m2!1suk!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </div>
-          <div class="contact-us__cta fade-in-up">
-            <a href="#consumer-representation" data-open-registration="" class="btn btn-cta btn-cta--violet-primary btn-cta--full-width" data-i18n="nav.consumerRepresentation">Zastupování spotřebitelů</a>
-            <a href="#contact-us" class="btn btn-cta btn-cta--white-outline btn-cta--full-width" data-i18n="nav.contactUs">Kontaktujte nás</a>
-          </div>
-        </div>
-      </div>
-    </section>
     <section class="footer">
       <div class="container">
         <div class="footer__inner fade-in-up">
@@ -497,16 +302,16 @@
           </div>
             <ul class="footer__list">
               <li class="footer__item">
-                <a href="#specializations" class="footer__link" data-i18n="nav.specializations">Specializace</a>
+                <a href="index.html#specializations" class="footer__link" data-i18n="nav.specializations">Specializace</a>
               </li>
               <li class="footer__item">
-                <a href="#about-us" class="footer__link" data-i18n="nav.about">O nás</a>
+                <a href="index.html#about-us" class="footer__link" data-i18n="nav.about">O nás</a>
               </li>
               <li class="footer__item">
-                <a href="#services" class="footer__link" data-i18n="nav.services">Služby</a>
+                <a href="index.html#services" class="footer__link" data-i18n="nav.services">Služby</a>
               </li>
               <li class="footer__item">
-                <a href="#contact-us"  class="footer__link" data-i18n="nav.contacts">Kontakty</a>
+                <a href="index.html#contact-us"  class="footer__link" data-i18n="nav.contacts">Kontakty</a>
               </li>
               <li class="footer__item footer__item--select">
                 <select class="nav__select">
@@ -515,10 +320,10 @@
                 </select>
               </li>
               <li class="footer__item footer__item--button">
-                <a href="#consumer-representation" data-open-registration class="btn btn-cta btn-cta--violet-primary" data-i18n="nav.consumerRepresentation">Zastupování spotřebitelů</a>
+                <a href="index.html#consumer-representation" data-open-registration class="btn btn-cta btn-cta--violet-primary" data-i18n="nav.consumerRepresentation">Zastupování spotřebitelů</a>
               </li>
               <li class="footer__item footer__item--button">
-                <a href="#contact-us"  class="btn btn-cta btn-cta--white-outline" data-i18n="nav.contactUs">Kontaktujte nás</a>
+                <a href="index.html#contact-us"  class="btn btn-cta btn-cta--white-outline" data-i18n="nav.contactUs">Kontaktujte nás</a>
               </li>
             </ul>
         </div>

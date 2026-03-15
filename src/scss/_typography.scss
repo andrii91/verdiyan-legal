@@ -73,6 +73,12 @@ h2,
   letter-spacing: $letter-spacing-h2;
   font-weight: 700;
   color: $color-text-primary;
+
+  @media (max-width: 1023px) {
+    font-size: 30px;
+    line-height: 38px;
+    letter-spacing: 0;
+  }
 }
 
 h3,

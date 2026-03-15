@@ -2748,6 +2748,12 @@
     
     // Initialize about us cards slider
     initAboutUsSlider();
+
+    // Initialize animate on scroll
+    initAnimateOnScroll();
+
+    // Initialize privacy policy navigation
+    initPrivacyPolicyNavigation();
   }
 
   // Initialize i18n system
@@ -2807,7 +2813,7 @@
   // Smooth scroll for anchor links
   function initSmoothScroll() {
     // Handle navigation links
-    $(".nav__link[href^='#'], .btn[href^='#']:not([data-open-registration])").click(function (e) {
+    $(".nav__link[href^='#'], .btn[href^='#']:not([data-open-registration]), .scroll-link").click(function (e) {
       e.preventDefault();
       var id = $(this).attr("href");
       
@@ -3237,21 +3243,63 @@
       dots: true,
       infinite: true,
       speed: 300,
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      adaptiveHeight: true,
-      arrows: true,
-      autoplay: false,
-      responsive: [
-        {
-          breakpoint: 1024,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1
-          }
-        }
-      ]
+      variableWidth: true,
+      arrows: false,
+      autoplay: false
     });
   }
 
+  // Initialize animate on scroll
+function initAnimateOnScroll() {
+  const fadeMap = {
+    "fade-in": "fadeIn",
+    "fade-in-right": "fadeInRight",
+    "fade-in-left": "fadeInLeft",
+    "fade-in-up": "fadeInUp",
+  };
+
+  const animationObserver = new IntersectionObserver((entries, observerInstance) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const el = entry.target;
+
+        for (const key in fadeMap) {
+          if (el.classList.contains(key)) {
+            el.classList.add("visible", "animated", fadeMap[key]);
+            el.classList.remove("hidden_animation");
+            
+            // Add event listener to remove animation classes after animation completes
+            const animationDuration = 1000; // 1 second animation duration
+            setTimeout(() => {
+              el.classList.remove("animated", fadeMap[key]);
+            }, animationDuration);
+            
+            break;
+          }
+        }
+
+        observerInstance.unobserve(el);
+      }
+    });
+  }, {
+    threshold: 0.1
+  });
+
+  for (const fadeClass in fadeMap) {
+    document.querySelectorAll(`.${fadeClass}`).forEach(el => {
+      el.classList.add("hidden_animation");
+      animationObserver.observe(el);
+    });
+  }
+}
+
+  // Initialize privacy policy navigation
+  function initPrivacyPolicyNavigation() {
+    const $privacyPolicyNavTitle = $('.privacy-policy__nav-title');
+
+    $privacyPolicyNavTitle.on('click', function() {
+      $(this).parent().find('.privacy-policy__nav-list').slideToggle(200);
+      $(this).toggleClass('privacy-policy__nav-title--active');
+    });
+  }
 })(jQuery);
