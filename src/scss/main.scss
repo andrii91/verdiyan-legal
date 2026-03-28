@@ -85,6 +85,18 @@ select {
   right: 0;
   z-index: 1000;
   transition: padding $transition-base;
+  
+  @media (max-width: 1023px) {
+    position: absolute;
+
+    &.open-menu {
+      position: fixed;
+    }
+
+    .nav__mobile {
+      padding-right: 56px;
+    }
+  }
 
   &.nav-light {
     background-color: $white-000;
@@ -186,6 +198,11 @@ select {
 
     &-button {
       color: $white-000;
+      position: fixed;
+      right: 16px;
+      top: 16px;
+      background: #0F0035;
+      border-radius: 50%;
       .icon {
         width: 40px;
         height: 40px;
@@ -298,6 +315,13 @@ select {
   color: $white-000;
   padding: 160px 0 100px;
   overflow: hidden;
+
+  .registration-modal__content {
+    max-height: auto;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
   @media (max-width: 1023px) {
     padding: 72px 0 37px;

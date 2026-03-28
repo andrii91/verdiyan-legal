@@ -161,7 +161,7 @@ h1,
   font-size: 60px;
   line-height: 72px;
   letter-spacing: -0.02em;
-  font-weight: 700;
+  font-weight: 600;
   color: #0F0035;
 }
 
@@ -170,7 +170,7 @@ h2,
   font-size: 36px;
   line-height: 44px;
   letter-spacing: -0.02em;
-  font-weight: 700;
+  font-weight: 600;
   color: #0F0035;
 }
 @media (max-width: 1023px) {
@@ -187,7 +187,7 @@ h3,
   font-size: 30px;
   line-height: 38px;
   letter-spacing: 0;
-  font-weight: 700;
+  font-weight: 600;
   color: #0F0035;
 }
 
@@ -970,6 +970,17 @@ select.select-light {
   -webkit-transition: padding 200ms ease;
   transition: padding 200ms ease;
 }
+@media (max-width: 1023px) {
+  .nav {
+    position: absolute;
+  }
+  .nav.open-menu {
+    position: fixed;
+  }
+  .nav .nav__mobile {
+    padding-right: 56px;
+  }
+}
 .nav.nav-light {
   background-color: #ffffff;
   color: #0F0035;
@@ -1073,6 +1084,11 @@ select.select-light {
 }
 .nav__mobile-button {
   color: #ffffff;
+  position: fixed;
+  right: 16px;
+  top: 16px;
+  background: #0F0035;
+  border-radius: 50%;
 }
 .nav__mobile-button .icon {
   width: 40px;
@@ -1205,6 +1221,12 @@ select.select-light {
   color: #ffffff;
   padding: 160px 0 100px;
   overflow: hidden;
+}
+.header .registration-modal__content {
+  max-height: auto;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media (max-width: 1023px) {
   .header {

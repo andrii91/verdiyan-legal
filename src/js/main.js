@@ -498,11 +498,13 @@
     const $navList = $('[data-nav-list]');
     const $openNavListBtn = $('.nav__mobile-button');
     const $navMobile = $openNavListBtn.parents('.nav__mobile');
+    const $nav = $('.nav');
 
     // Toggle mobile menu
     $openNavListBtn.on('click', function() {
       $navList.toggleClass('nav__list--active');
       $navMobile.toggleClass('nav__mobile--active');
+      $nav.toggleClass('open-menu');
     });
 
     // Close mobile menu when clicking on a navigation link
@@ -510,6 +512,7 @@
       if (isMobile()) {
         $navList.removeClass('nav__list--active');
         $navMobile.removeClass('nav__mobile--active');
+        $nav.removeClass('open-menu');
       }
     });
   }
@@ -531,7 +534,7 @@
     $slider.slick({
       dots: true,
       infinite: true,
-      speed: 300,
+      speed: 1500,
       variableWidth: true,
       arrows: false,
       autoplay: false
@@ -547,39 +550,47 @@ function initAnimateOnScroll() {
     "fade-in-up": "fadeInUp",
   };
 
-  const animationObserver = new IntersectionObserver((entries, observerInstance) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        const el = entry.target;
+  const fadeClasses = Object.keys(fadeMap);
+  let pending = [];
 
-        for (const key in fadeMap) {
-          if (el.classList.contains(key)) {
-            el.classList.add("visible", "animated", fadeMap[key]);
-            el.classList.remove("hidden_animation");
-            
-            // Add event listener to remove animation classes after animation completes
-            const animationDuration = 1000; // 1 second animation duration
-            setTimeout(() => {
-              el.classList.remove("animated", fadeMap[key]);
-            }, animationDuration);
-            
-            break;
-          }
-        }
-
-        observerInstance.unobserve(el);
-      }
-    });
-  }, {
-    threshold: 0.1
-  });
-
-  for (const fadeClass in fadeMap) {
+  fadeClasses.forEach(fadeClass => {
     document.querySelectorAll(`.${fadeClass}`).forEach(el => {
       el.classList.add("hidden_animation");
-      animationObserver.observe(el);
+      pending.push(el);
     });
+  });
+
+  function isInViewport(el) {
+    const rect = el.getBoundingClientRect();
+    return rect.top < window.innerHeight && rect.bottom > 0;
   }
+
+  function checkElements() {
+    pending = pending.filter(el => {
+      if (!isInViewport(el)) return true;
+
+      for (const key of fadeClasses) {
+        if (el.classList.contains(key)) {
+          el.classList.add("visible", "animated", fadeMap[key]);
+          el.classList.remove("hidden_animation");
+          setTimeout(() => {
+            el.classList.remove("animated", fadeMap[key]);
+          }, 1000);
+          break;
+        }
+      }
+      return false;
+    });
+
+    if (pending.length === 0) {
+      window.removeEventListener("scroll", checkElements);
+      window.removeEventListener("resize", checkElements);
+    }
+  }
+
+  window.addEventListener("scroll", checkElements, { passive: true });
+  window.addEventListener("resize", checkElements, { passive: true });
+  checkElements();
 }
 
   // Initialize privacy policy navigation

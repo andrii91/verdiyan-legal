@@ -110,10 +110,13 @@
   },
   "privacyPolicy": {
     "title": "Informace o zpracování osobních údajů",
+    "cookiesPage": {
+      "title": "Cookies"
+    },
     "introduction": {
       "title": "Účel dokumentu a Ochrana osobních údajů",
       "paragraph1": "Účelem tohoto dokumentu je poskytnout klientům a dalším osobám, informace o zpracování osobních údajů v rozsahu stanoveném v čl. 13 Nařízení Evropského parlamentu a Rady (EU) 2016/679 o ochraně fyzických osob v souvislosti se zpracováním osobních údajů a o volném pohybu těchto údajů a o zrušení směrnice 95/46/ES (obecné nařízení o ochraně osobních údajů) (dále jen „GDPR\" nebo „nařízení\"), tedy zejména informace o tom jaké osobní údaje zpracováváme, na základě jakého právního titulu je zpracováváme, k jakým účelům je využíváme, komu je předáváme a jaká jsou Vaše práva ve vztahu námi zpracovávaným osobním údajům.",
-      "paragraph2": "Advokátní kancelář se jakožto správce osobních údajů, které mu budou poskytnuty, zavazuje, že bude tyto osobní údaje zpracovávat v souladu s právními předpisy, především se zákonem č. 85/1996 Sb. (zákon o advokacii), zákonem č. 110/2019 SB., o zpracování osobních údajů, a nařízením. Všechny osoby, které se v rámci svých pracovních či smluvních povinností podílejí na zpracování osobních údajů, podléhají zákonné či smluvní povinnosti mlčenlivosti."
+      "paragraph2": "Advokátní kancelář se jakožto správce osobních údajů, které mu budou poskytnuty, zavazuje, že bude tyto osobní údaje zpracovávat v souladu s právními předpisy, především se zákonem č. 85/1996 Sb. (zákon o advokacii), zákonem č. 110/2019 Sb., o zpracování osobních údajů, a nařízením. Všechny osoby, které se v rámci svých pracovních či smluvních povinností podílejí na zpracování osobních údajů, podléhají zákonné či smluvní povinnosti mlčenlivosti."
     },
     "controller": {
       "title": "TOTOŽNOST A KONTAKTNÍ ÚDAJE SPRÁVCE osobních údajů",
@@ -156,10 +159,10 @@
       "item4": "požádat správce o výmaz osobních údajů zpracovávaných správcem, pokud již nejsou potřebné pro poskytnutý účel, nebo pokud jsou správcem zpracovávány protiprávně,",
       "item5": "požádat správce o omezení zpracování svých osobních údajů v případech stanovených v čl. 18 GDPR,",
       "item6": "na přenositelnost Vašich osobních údajů, které jste poskytli na základě souhlasu nebo smlouvy, a v této souvislosti na jejich poskytnutí v běžně užívaném formátu,",
-      "item7": "vnést námitku proti zpracování Vašich osobních údajů pro účely přímého marketingu, včetně profilování, pokud se profilování týká tohoto přímého marketingu. Pokud vznesete námitku proti zpracování Vašich osobních údajů pro účely přímého marketingu, nebudou již Vaše osobní údaje pro tyto účely dále zpracovávány.",
+      "item7": "vznést námitku proti zpracování Vašich osobních údajů pro účely přímého marketingu, včetně profilování, pokud se profilování týká tohoto přímého marketingu. Pokud vznesete námitku proti zpracování Vašich osobních údajů pro účely přímého marketingu, nebudou již Vaše osobní údaje pro tyto účely dále zpracovávány.",
       "paragraph1": "Právo kdykoli odvolat souhlas se zpracováním osobních údajů se neuplatní, jelikož osobní údaje klienta jsou zpracovávány z důvodu plnění smlouvy uzavřené s klientem, nikoli na základě souhlasu se zpracováním.",
       "paragraph2": "Pokud byste se domníval(a), že zpracováním Vašich osobních údajů bylo porušeno či je porušováno nařízení GDPR, máte mimo jiné právo podat stížnost u dozorového orgánu, kterým je Úřad pro ochranu osobních údajů.",
-      "paragraph3": "Svého práva můžete uplatnit osobně v sídle správce, případně na uvedené adrese písemně s úředně ověřeným podpisem nebo emailem na shora uvedené emailové adrese správce nebo prostřednictvím datové schránky správce. Správce je oprávněn a povinen v souvislosti s uplatněním Vašich práv požadovat ověření Vaší totožnosti."
+      "paragraph3": "Své práva můžete uplatnit osobně v sídle správce, případně na uvedené adrese písemně s úředně ověřeným podpisem nebo emailem na shora uvedené emailové adrese správce nebo prostřednictvím datové schránky správce. Správce je oprávněn a povinen v souvislosti s uplatněním Vašich práv požadovat ověření Vaší totožnosti."
     },
     "consent": {
       "title": "Souhlas",

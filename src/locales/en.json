@@ -110,6 +110,9 @@
   },
   "privacyPolicy": {
     "title": "Information on Personal Data Processing",
+    "cookiesPage": {
+      "title": "Cookies"
+    },
     "introduction": {
       "title": "Purpose of the Document and Personal Data Protection",
       "paragraph1": "The purpose of this document is to provide clients and other persons with information on personal data processing within the scope set out in Article 13 of Regulation (EU) 2016/679 of the European Parliament and of the Council on the protection of natural persons with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (General Data Protection Regulation) (hereinafter referred to as \"GDPR\" or \"Regulation\"), in particular information on what personal data we process, on what legal basis we process it, for what purposes we use it, to whom we transfer it, and what your rights are in relation to the personal data we process.",

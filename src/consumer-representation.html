@@ -145,301 +145,104 @@
   <!-- Landing page content will be here -->
   <header class="header">
     <div class="container">
-      <div class="header__inner">
-        <div class="header__content">
-          <h1 class="header__title fade-in-up" data-i18n="header.title">Verdiyan Legal</h1>
-          <p class="header__description fade-in-up" data-i18n="header.description">Advokátní kancelář poskytuje právní služby klientům z řad fyzických osob i obchodních společností, a to s důrazem na vysokou odbornou úroveň, strategický přístup a srozumitelnou komunikaci.</p>
-          <div class="header__cta fade-in-up">
-            <a href="consumer-representation.html"  class="btn btn-cta btn-cta--violet-primary lg-hidden" data-i18n="nav.consumerRepresentation">Zastupování spotřebitelů</a>
-            <a href="#contact-us" data-open-registration   class="btn btn-cta btn-cta--white-outline" data-i18n="nav.contactUs">Kontaktujte nás</a>
+      <div class="registration-modal__content">
+      <button class="registration-modal__close" aria-label="Close">
+        <svg class="icon" viewBox="0 0 16 16" fill="none">
+          <use href="#icon-close" />
+        </svg>
+      </button>
+      <div class="registration-modal__header">
+        <p class="registration-modal__label" data-i18n="registration.label">Contact us</p>
+        <h2 class="registration-modal__title" data-i18n="registration.title">Get in touch</h2>
+        <p class="registration-modal__description" data-i18n="registration.description">We'd love to hear from you. Please fill out this form.</p>
+      </div>
+      <form class="registration-modal__form" id="registration-form" novalidate>
+        <div class="registration-modal__form-row">
+          <div class="input-field">
+            <input 
+              type="text" 
+              class="input-control" 
+              id="first-name" 
+              name="firstName" 
+              data-i18n="registration.firstName"
+              data-i18n-attr="placeholder"
+              required
+              minlength="2"
+            />
+            <span class="input-error" id="first-name-error"></span>
+          </div>
+          <div class="input-field">
+            <input 
+              type="text" 
+              class="input-control" 
+              id="last-name" 
+              name="lastName" 
+              data-i18n="registration.lastName"
+              data-i18n-attr="placeholder"
+              required
+              minlength="2"
+            />
+            <span class="input-error" id="last-name-error"></span>
           </div>
         </div>
-        <div class="header__image fade-in-up">
-          <img loading="lazy" src="images/header-image.svg" alt="Verdiyan Legal">
+        <div class="input-field">
+          <input 
+            type="email" 
+            class="input-control" 
+            id="email" 
+            name="email" 
+            data-i18n="registration.email"
+            data-i18n-attr="placeholder"
+            required
+          />
+          <span class="input-error" id="email-error"></span>
         </div>
-      </div>
+        <div class="input-field">
+          <input 
+            type="tel" 
+            class="input-control" 
+            id="phone" 
+            name="phone" 
+            data-i18n="registration.phone"
+            data-i18n-attr="placeholder"
+            required
+          />
+          <span class="input-error" id="phone-error"></span>
+        </div>
+        <div class="input-field">
+          <textarea 
+            class="input-control" 
+            id="message" 
+            name="message" 
+            rows="4"
+            data-i18n="registration.message"
+            data-i18n-attr="placeholder"
+            required
+            minlength="10"
+          ></textarea>
+          <span class="input-error" id="message-error"></span>
+        </div>
+        <div class="registration-modal__checkbox">
+          <input 
+            type="checkbox" 
+            id="privacy-policy" 
+            name="privacyPolicy" 
+            required
+          />
+          <label for="privacy-policy" data-i18n="registration.privacyPolicy">You agree to our friendly privacy policy.</label>
+          <span class="input-error" id="privacy-policy-error"></span>
+        </div>
+
+        <div class="registration-modal__message registration-modal__message--error" id="form-error" style="display: none;"></div>
+        <div class="registration-modal__message registration-modal__message--success" id="form-success" style="display: none;"></div>
+        <button type="submit" class="btn btn-cta btn-cta--dark-primary registration-modal__submit" disabled data-i18n="registration.submit">
+          <span class="submit-text" data-i18n="registration.submit">Send message</span>
+          <span class="submit-loading" style="display: none;" data-i18n="registration.sending">Sending...</span>
+        </button>
+      </form>
+    </div>
     </div>
   </header>
-    
-  <main>
-    <section class="section specializations" id="specializations">
-      <div class="container">
-        <div class="specializations__icon fade-in-up">
-          <svg class="icon">
-            <use href="#icon-specializations" />
-          </svg>
-        </div>
-        <h2 class="specializations__title fade-in-up" data-i18n="specializations.title">Specializace</h2>
-        <p class="specializations__description fade-in-up" data-i18n="specializations.description">Specializujeme se na poskytování právních služeb v široké oblasti. Pomáháme klientům řešit právní otázky týkající se majetkových práv, smluvních vztahů, dědictví a dalších oblastí občanského práva. Zajišťujeme přípravu a revizi smluv, zastupování ve sporech a ochranu osobních práv a majetkových zájmů.</p>
-
-        <div class="specializations__inner">
-          <!-- Civil Law -->
-          <div class="specializations__item fade-in-up">
-            <div class="specializations__item-icon">
-              <svg class="icon" >
-                <use href="#icon-civil" />
-              </svg>
-            </div>
-            <h3 class="specializations__item-title" data-i18n="specializations.civil.title">Občanské právo</h3>
-            <ul class="specializations__item-list">
-              <li data-i18n="specializations.civil.description1">Poskytujeme právní poradenství a zastoupení v oblasti občanského práva, zejména ve věcech smluvních vztahů, ochrany majetkových práv, náhrady škody, dědictví a dalších civilních agend.</li>
-              <li data-i18n="specializations.civil.description2">Zajišťujeme přípravu a revizi smluv, právní analýzy, zastupování v soudních sporech i mimosoudní řešení sporů.</li>
-            </ul>
-          </div>
-
-          <!-- Commercial Law -->
-          <div class="specializations__item fade-in-up">
-            <div class="specializations__item-icon">
-              <svg class="icon">
-                <use href="#icon-commercial" />
-              </svg>
-            </div>
-            <h3 class="specializations__item-title" data-i18n="specializations.commercial.title">Obchodní právo</h3>
-            <ul class="specializations__item-list">
-              <li data-i18n="specializations.commercial.description1">V oblasti obchodního práva poskytujeme právní služby podnikatelům i obchodním společnostem. Zaměřujeme se zejména na obchodní smlouvy, korporátní agendu, zakládání společností, změny ve struktuře společnosti a poradenství při podnikatelských transakcích.</li>
-              <li data-i18n="specializations.commercial.description2">Zastupujeme klienty při jednání s obchodními partnery, v řízeních před soudy a při řešení obchodních sporů.</li>
-            </ul>
-          </div>
-
-          <!-- Family Law -->
-          <div class="specializations__item fade-in-up">
-            <div class="specializations__item-icon">
-              <svg class="icon">
-                <use href="#icon-family" />
-              </svg>
-            </div>
-            <h3 class="specializations__item-title" data-i18n="specializations.family.title">Rodinné právo</h3>
-            <ul class="specializations__item-list">
-              <li data-i18n="specializations.family.description1">Rodinné právo vyžaduje nejen odborný přístup, ale i citlivé vedení celé věci. Poskytujeme právní podporu v otázkách rozvodu, úpravy péče o nezletilé děti, výživného, styku s dítětem a majetkového vypořádání.</li>
-              <li data-i18n="specializations.family.description2">Pomáháme klientům hledat řešení, které je právně správné a současně přiměřené okolnostem konkrétní rodinné situace.</li>
-            </ul>
-          </div>
-
-          <!-- Intellectual Property Law -->
-          <div class="specializations__item fade-in-up">
-            <div class="specializations__item-icon">
-              <svg class="icon">
-                <use href="#icon-intellectual" />
-              </svg>
-            </div>
-            <h3 class="specializations__item-title" data-i18n="specializations.intellectual.title">Právo duševního vlastnictví</h3>
-            <ul class="specializations__item-list">
-              <li data-i18n="specializations.intellectual.description1">Zajišťujeme právní ochranu v oblasti autorského práva, ochranných známek, průmyslových vzorů a dalších práv duševního vlastnictví.</li>
-              <li data-i18n="specializations.intellectual.description2">Klientům poskytujeme poradenství při registraci práv, jejich správě, licencování i při vymáhání nároků v případě porušení práv, včetně zastupování ve sporech.</li>
-            </ul>
-          </div>
-
-          <!-- Labor Law -->
-          <div class="specializations__item fade-in-up">
-            <div class="specializations__item-icon">
-              <svg class="icon">
-                <use href="#icon-labor" />
-              </svg>
-            </div>
-            <h3 class="specializations__item-title" data-i18n="specializations.labor.title">Pracovní právo</h3>
-            <ul class="specializations__item-list">
-              <li data-i18n="specializations.labor.description1">Advokátní kancelář Verdiyan Legal má zkušenosti se zastupováním zaměstnavatelů i zaměstnanců při řešení pracovněprávních sporů, a to jak v předsoudní fázi, tak v řízeních před soudy.</li>
-              <li data-i18n="specializations.labor.description2">Poskytujeme poradenství zejména ve věcech ukončení pracovního poměru, pracovních smluv, náhrad škody, interních předpisů a pracovních sporů.</li>
-            </ul>
-          </div>
-
-          <!-- Advertising and Tobacco Law -->
-          <div class="specializations__item fade-in-up">
-            <div class="specializations__item-icon">
-              <svg class="icon">
-                <use href="#icon-advertising" />
-              </svg>
-            </div>
-            <h3 class="specializations__item-title" data-i18n="specializations.advertising.title">Reklamní a tabákové právo</h3>
-            <ul class="specializations__item-list">
-              <li data-i18n="specializations.advertising.description1">Poskytujeme specializované právní poradenství v oblasti regulace reklamy a tabákových výrobků, včetně souvisejících správních řízení a komunikace s dozorovými orgány.</li>
-              <li data-i18n="specializations.advertising.description2">Zastupujeme klienty při posuzování souladu marketingových kampaní s právními předpisy, při řešení sporů a při nastavování interních procesů compliance. Zkušenosti v této oblasti vycházejí mimo jiné z dlouhodobé spolupráce s nadnárodními subjekty.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <div class="container">
-      <section class="banner-section fade-in-up">
-        <h3 class="banner-section__title" data-i18n="bannerSection.title">Zastupování spotřebitelů ve sporech s poskytovateli nebankovních úvěrů</h3>
-        <p class="banner-section__description" data-i18n="bannerSection.description">Samostatnou agendou advokátní kanceláře je zastupování klientů ve sporech s poskytovateli spotřebitelských úvěrů, zejména s nebankovními subjekty. Tyto služby jsou poskytovány pod obchodním označením Nourox (dříve FinHelp).</p>
-        <a href="consumer-representation.html"  class="banner-section__cta btn btn-cta btn-cta--violet-primary" data-i18n="bannerSection.cta">Zastupování spotřebitelů</a>
-      </section>
-    </div>
-
-    <section class="section about-us" id="about-us">
-      <div class="container">
-        <div class="about-us__wrap">
-          <div class="about-us__row">
-            <div class="about-us__text fade-in-up">
-              <p class="about-us__description" data-i18n="aboutUs.description">O nás</p>
-              <h2 class="about-us__title" data-i18n="aboutUs.title">Verdiyan Legal</h2>
-
-              <div class="about-us__content fade-in-up">
-                <p data-i18n="aboutUs.paragraph1">Zakládajícím partnerem advokátní kanceláře Verdiyan Legal je Mgr. Bagrat Verdiyan, advokát, který působí v advokacii od roku 2005. Od roku 2009 vykonává advokacii jako samostatný advokát. Před založením vlastní praxe získal rozsáhlé zkušenosti v rámci dlouhodobé spolupráce s přední českou advokátní kanceláří, kde se podílel na řešení právních agend významných korporátních klientů i na zastupování v rozsáhlých soudních sporech.</p>
-
-                <p data-i18n="aboutUs.paragraph2">Verdiyan Legal navazuje na tyto zkušenosti a poskytuje právní služby jak v rámci dlouhodobého právního poradenství, tak při řešení jednotlivých případů. Klientům nabízíme profesionální podporu při obchodních transakcích, v soudních sporech, při ochraně majetkových práv i v citlivých osobních a rodinných záležitostech. Naší prioritou je poskytovat právní služby, které jsou nejen právně precizní, ale zároveň praktické a efektivní.</p>
-                <p data-i18n="aboutUs.paragraph3">Advokátní kancelář poskytuje právní služby v českém, anglickém, ruském a německém jazyce.</p>               
-              </div>
-              <a href="#contact-us" data-open-registration  class="btn btn-cta btn-cta--dark-primary" data-i18n="nav.contactUs">Kontaktujte nás</a>
-            </div>
-            <div class="about-us__card about-us__card--partner">
-              <div class="about-us__image fade-in-up">
-                <img loading="lazy" src="images/about-us-1.webp" alt="O nás">
-              </div>
-              <div class="about-us__footer fade-in-up">
-                <h6>Mgr. Bagrat Verdiyan</h6>
-                <p data-i18n="aboutUs.positions.partner">Partner | Advokát</p>
-              </div>
-            </div>
-          </div>
-          <div class="about-us__cards">
-            <div class="about-us__card lg-hidden">
-              <div class="about-us__image fade-in-up">
-                <img loading="lazy" src="images/about-us-1.webp" alt="O nás">
-              </div>
-              <div class="about-us__footer fade-in-up">
-                <h6>Mgr. Bagrat Verdiyan</h6>
-                <p data-i18n="aboutUs.positions.partner">Partner | Advokát</p>
-              </div>
-            </div>
-            <div class="about-us__card fade-in-up">
-              <div class="about-us__image fade-in-left">
-                <img loading="lazy" src="images/about-us-2.webp" alt="O nás">
-              </div>
-              <div class="about-us__footer fade-in-up">
-                <h6>Mgr. Monika Faltusová</h6>
-                <p data-i18n="aboutUs.positions.collaborating">Spolupracující advokát</p>
-              </div>
-            </div>
-            <div class="about-us__card fade-in-up">
-              <div class="about-us__image fade-in-left">
-                <img loading="lazy" src="images/about-us-3.webp" alt="O nás">
-              </div>
-              <div class="about-us__footer fade-in-up">
-                <h6>Mgr. Martin Vališ</h6>
-                <p data-i18n="aboutUs.positions.collaborating">Spolupracující advokát</p>
-              </div>
-            </div>
-            <div class="about-us__card fade-in-up">
-              <div class="about-us__image fade-in-left">
-                <img loading="lazy" src="images/about-us-4.webp" alt="O nás">
-              </div>
-              <div class="about-us__footer fade-in-up">
-                <h6>Mgr. Anastasija Levina</h6>
-                <p data-i18n="aboutUs.positions.trainee">Advokátní koncipientka</p>
-              </div>
-            </div>
-            <div class="about-us__card fade-in-up">
-              <div class="about-us__image fade-in-left">
-                <img loading="lazy" src="images/about-us-5.webp" alt="O nás">
-              </div>
-              <div class="about-us__footer fade-in-up">
-                <h6>Mgr. Olha Shymanska</h6>
-                <p data-i18n="aboutUs.positions.projectManager">Projektový manažer</p>
-              </div>
-            </div>
-          </div>
-          <div class="about-us__cards-slider-mobile lg-hidden">
-            <div class="about-us__card">
-              <div class="about-us__image">
-                <img loading="lazy" src="images/about-us-1.webp" alt="O nás">
-              </div>
-              <div class="about-us__footer">
-                <h6>Mgr. Bagrat Verdiyan</h6>
-                <p data-i18n="aboutUs.positions.partner">Partner | Advokát</p>
-              </div>
-            </div>
-            <div class="about-us__card">
-              <div class="about-us__image">
-                <img loading="lazy" src="images/about-us-2.webp" alt="O nás">
-              </div>
-              <div class="about-us__footer">
-                <h6>Mgr. Monika Faltusová</h6>
-                <p data-i18n="aboutUs.positions.collaborating">Spolupracující advokát</p>
-              </div>
-            </div>
-            <div class="about-us__card">
-              <div class="about-us__image">
-                <img loading="lazy" src="images/about-us-3.webp" alt="O nás">
-              </div>
-              <div class="about-us__footer">
-                <h6>Mgr. Martin Vališ</h6>
-                <p data-i18n="aboutUs.positions.collaborating">Spolupracující advokát</p>
-              </div>
-            </div>
-            <div class="about-us__card">
-              <div class="about-us__image">
-                <img loading="lazy" src="images/about-us-4.webp" alt="O nás">
-              </div>
-              <div class="about-us__footer">
-                <h6>Mgr. Anastasija Levina</h6>
-                <p data-i18n="aboutUs.positions.trainee">Advokátní koncipientka</p>
-              </div>
-            </div>
-            <div class="about-us__card">
-              <div class="about-us__image">
-                <img loading="lazy" src="images/about-us-5.webp" alt="O nás">
-              </div>
-              <div class="about-us__footer">
-                <h6>Mgr. Olha Shymanska</h6>
-                <p data-i18n="aboutUs.positions.projectManager">Projektový manažer</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section services" id="services">
-      <div class="container">
-        <h2 class="services__title fade-in-up" data-i18n="services.title">Služby</h2>
-        <div class="services__inner">
-          <div class="services__item fade-in-up">
-            <div class="services__item-icon">
-              <svg class="icon">
-                <use href="#icon-services-1" />
-              </svg>
-            </div>
-            <h3 class="services__item-title" data-i18n="services.item1.title">Vymáhání pohledávek a zastupování věřitelů i dlužníků</h3>
-          </div>
-          <div class="services__item fade-in-up">
-            <div class="services__item-icon">
-              <svg class="icon">
-                <use href="#icon-services-2" />
-              </svg>
-            </div>
-            <h3 class="services__item-title" data-i18n="services.item2.title">Právní due diligence a podpora při obchodních transakcích</h3>
-          </div>
-          <div class="services__item fade-in-up">
-            <div class="services__item-icon">
-              <svg class="icon">
-                <use href="#icon-services-3" />
-              </svg>
-            </div>
-            <h3 class="services__item-title" data-i18n="services.item3.title">Zastupování klientů v soudních sporech a rozhodčích řízeních</h3>
-          </div>
-          <div class="services__item fade-in-up">
-            <div class="services__item-icon">
-              <svg class="icon">
-                <use href="#icon-services-4" />
-              </svg>
-            </div>
-            <h3 class="services__item-title" data-i18n="services.item4.title">Ochrana práv duševního vlastnictví a vedení sporů v této oblasti</h3>
-          </div>
-          <div class="services__item fade-in-up">
-            <div class="services__item-icon">
-              <svg class="icon">
-                <use href="#icon-services-5" />
-              </svg>
-            </div>
-            <h3 class="services__item-title" data-i18n="services.item5.title">Zastupování českých i nadnárodních společností </h3>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
 
   <footer class="footer-bg">
     <section class="contact-us" id="contact-us">
