@@ -1,61 +1,61 @@
 {
   "nav": {
-    "specializations": "Specializations",
+    "specializations": "Expertise",
     "about": "About Us",
-    "services": "Services",
-    "contacts": "Contacts",
+    "services": "Legal Services",
+    "contacts": "Contact",
     "consumerRepresentation": "Consumer Representation",
     "contactUs": "Contact Us"
   },
   "header": {
     "title": "Verdiyan Legal",
-    "description": "The law firm provides legal services to clients from among natural persons and commercial companies, with an emphasis on a high level of expertise, a strategic approach, and clear communication."
+    "description": "A law firm providing legal services to both individuals and businesses. Our practice is built on professional expertise, strategic legal thinking, and clear communication with our clients."
   },
   "specializations": {
-    "title": "Specializations",
-    "description": "We specialize in providing legal services in a wide area. We help clients resolve legal issues related to property rights, contractual relationships, inheritance, and other areas of civil law. We ensure the preparation and revision of contracts, representation in disputes, and the protection of personal rights and property interests.",
+    "title": "Expertise",
+    "description": "We provide legal services across a broad range of practice areas. Our law firm assists clients with legal matters related to property rights, contractual relationships, inheritance, and other areas of civil law. We prepare and review contracts, represent clients in legal disputes, and protect their personal rights and property interests.",
     "civil": {
       "title": "Civil Law",
-      "description1": "We provide legal advice and representation in the field of civil law, especially in matters of contractual relationships, protection of property rights, compensation for damages, inheritance, and other civil agendas.",
-      "description2": "We ensure the preparation and revision of contracts, legal analyses, representation in court disputes, and out-of-court dispute resolution."
+      "description1": "We provide legal advice and representation in civil law matters, particularly in contractual relationships, protection of property rights, damage claims, inheritance matters, and other civil law issues.",
+      "description2": "Our services include contract drafting and review, legal analysis, representation in court proceedings, and out-of-court dispute resolution."
     },
     "commercial": {
       "title": "Commercial Law",
-      "description1": "In the field of commercial law, we provide legal services to entrepreneurs and commercial companies. We focus primarily on commercial contracts, corporate agenda, company formation, changes in company structure, and advice on business transactions.",
-      "description2": "We represent clients in negotiations with business partners, in court proceedings, and in resolving commercial disputes."
+      "description1": "In the area of commercial law, we provide legal services to entrepreneurs and companies. Our practice focuses on commercial contracts, corporate matters, company formation, changes in corporate structure, and legal support in business transactions.",
+      "description2": "We represent clients in negotiations with business partners, in court proceedings, and in the resolution of commercial disputes."
     },
     "family": {
       "title": "Family Law",
-      "description1": "Family law requires not only a professional approach but also sensitive handling of the entire matter. We provide legal support in matters of divorce, arrangements for the care of minor children, alimony, contact with the child, and property settlement.",
-      "description2": "We help clients find solutions that are legally correct and at the same time appropriate to the circumstances of the specific family situation."
+      "description1": "Family law requires not only legal expertise but also a sensitive and thoughtful approach. We provide legal assistance in matters such as divorce, child custody arrangements, child support, visitation rights, and division of marital property.",
+      "description2": "Our goal is to help clients find solutions that are legally sound while respecting the specific circumstances of each family situation."
     },
     "intellectual": {
       "title": "Intellectual Property Law",
-      "description1": "We ensure legal protection in the field of copyright, trademarks, industrial designs, and other intellectual property rights.",
-      "description2": "We provide clients with advice on the registration of rights, their administration, licensing, and enforcement of claims in case of infringement of rights, including representation in disputes."
+      "description1": "We provide legal protection in the field of intellectual property, including copyright, trademarks, industrial designs, and other IP rights.",
+      "description2": "Our services include legal advice on IP registration, rights management, licensing, and enforcement of IP rights in cases of infringement, including legal representation in disputes."
     },
     "labor": {
-      "title": "Labor Law",
-      "description1": "The law firm Verdiyan Legal has experience in representing both employers and employees in resolving labor disputes, both in the pre-litigation phase and in court proceedings.",
-      "description2": "We provide advice especially in matters of termination of employment, employment contracts, compensation for damages, internal regulations, and labor disputes."
+      "title": "Employment Law",
+      "description1": "Verdiyan Legal has experience representing both employers and employees in employment-related disputes, both in pre-litigation stages and in court proceedings.",
+      "description2": "We provide legal advice on matters such as termination of employment, employment contracts, compensation for damages, internal workplace policies, and employment disputes."
     },
     "advertising": {
       "title": "Advertising and Tobacco Law",
-      "description1": "We provide specialized legal advice in the field of advertising and tobacco product regulation, including related administrative proceedings and communication with supervisory authorities.",
-      "description2": "We represent clients in assessing the compliance of marketing campaigns with legal regulations, in resolving disputes, and in setting up internal compliance processes. Experience in this area stems, among other things, from long-term cooperation with multinational entities."
+      "description1": "We provide specialized legal advice in the area of advertising regulation and tobacco regulation, including related administrative proceedings and communication with regulatory authorities.",
+      "description2": "Our law firm assists clients in assessing the legal compliance of marketing campaigns, resolving disputes, and establishing internal compliance processes. Our expertise in this area is supported by long-term cooperation with multinational companies."
     }
   },
   "bannerSection": {
-    "title": "Representation of consumers in disputes with non-bank loan providers",
-    "description": "A separate agenda of the law firm is representing clients in disputes with consumer loan providers, especially with non-bank entities. These services are provided under the trade name Nourox (formerly FinHelp).",
+    "title": "Consumer Representation in Disputes with Non-Bank Lenders",
+    "description": "A dedicated area of our legal practice focuses on representing consumers in disputes with consumer credit providers, particularly non-bank lenders. These legal services are provided under the commercial brand Nourox (formerly Finhelp).",
     "cta": "Consumer Representation"
   },
   "aboutUs": {
     "description": "About Us",
     "title": "Verdiyan Legal",
-    "paragraph1": "The founding partner of the law firm Verdiyan Legal is Mgr. Bagrat Verdiyan, an attorney who has been practicing law since 2005. Since 2009, he has been practicing as an independent attorney. Before establishing his own practice, he gained extensive experience through long-term cooperation with a leading Czech law firm, where he participated in handling legal agendas for significant corporate clients and in representing clients in extensive court disputes.",
-    "paragraph2": "Verdiyan Legal builds on these experiences and provides legal services both in the framework of long-term legal counseling and in resolving individual cases. We offer clients professional support in business transactions, court disputes, protection of property rights, and in sensitive personal and family matters. Our priority is to provide legal services that are not only legally precise but also practical and effective.",
-    "paragraph3": "The law firm provides legal services in Czech, English, Russian, and German languages.",
+    "paragraph1": "The founding partner of Verdiyan Legal is Mgr. Bagrat Verdiyan, an attorney who has been practicing law since 2005 and has worked as an independent attorney since 2009. Before establishing his own law practice, he gained extensive experience through long-term cooperation with a leading Czech law firm, where he was involved in handling legal matters for major corporate clients and representing them in complex litigation.",
+    "paragraph2": "Verdiyan Legal builds on this experience and provides legal services both as part of ongoing legal advisory and in handling individual cases. We offer professional legal support in business transactions, litigation, protection of property rights, as well as in sensitive personal and family matters. Our priority is to deliver legal services that are not only legally precise but also practical and effective.",
+    "paragraph3": "Our law firm provides legal services in Czech, English, Russian, and German.",
     "positions": {
       "partner": "Partner | Attorney",
       "collaborating": "Collaborating Attorney",
@@ -66,19 +66,19 @@
   "services": {
     "title": "Services",
     "item1": {
-      "title": "Debt collection and representation of creditors and debtors"
+      "title": "Debt recovery and legal representation for both creditors and debtors"
     },
     "item2": {
-      "title": "Legal due diligence and support in business transactions"
+      "title": "Legal due diligence and support in business and corporate transactions"
     },
     "item3": {
-      "title": "Representation of clients in court disputes and arbitration proceedings"
+      "title": "Representation of clients in court litigation and arbitration proceedings"
     },
     "item4": {
-      "title": "Protection of intellectual property rights and management of disputes in this area"
+      "title": "Protection of intellectual property rights and IP dispute resolution"
     },
     "item5": {
-      "title": "Representation of Czech and multinational companies"
+      "title": "Legal representation of Czech and multinational companies"
     }
   },
   "cookies": {
@@ -93,7 +93,7 @@
       "title": "Office",
       "company": "Verdiyan Legal s.r.o.",
       "address": "Rybná 678/9, 110 00 Prague 1, Czech Republic",
-      "registration": "Registered in the Commercial Register maintained by the Municipal Court in Prague, Section C, Insert 12345"
+      "registration": "Registered in the Commercial Register maintained by the Municipal Court in Prague, Section C, File No. 12345."
     },
     "ask": {
       "title": "Ask a Question"
@@ -102,9 +102,9 @@
   "footer": {
     "consumerInfo": {
       "title": "Information for Consumers",
-      "description": "The Czech Bar Association has been authorized by the Ministry of Industry and Trade of the Czech Republic to resolve consumer disputes out of court under Act No. 634/1992 Coll., on Consumer Protection, as amended. This authorization applies to disputes between an attorney and a consumer concerning the provision of legal services. More information is available on the website of the Czech Bar Association:"
+      "description": "The Czech Bar Association has been authorized by the Ministry of Industry and Trade of the Czech Republic to provide out-of-court resolution of consumer disputes in accordance with Act No. 634/1992 Coll., on Consumer Protection, as amended. This authorization applies to disputes between a legal service provider and a consumer concerning the provision of legal services. More information is available on the website of the Czech Bar Association:"
     },
-    "copyright": "© 2026 Verdiyan Legal s.r.o. All rights reserved.",
+    "copyright": "© 2026 Verdiyan Legal. All rights reserved.",
     "privacyPolicy": "Privacy Policy",
     "cookies": "Cookies"
   },
@@ -183,8 +183,8 @@
       "text2": "The law states that we can store cookies on your device if they are strictly necessary for the operation of this site. For all other types of cookies, we need your permission.",
       "text3": "This site uses various types of cookies. Some cookies are placed by third-party services that appear on our pages.",
       "text4": "You can change or withdraw your consent at any time through the Cookie Statement on our website.",
-      "text5": "Find out more in our privacy policy about who we are, how you can contact us, and how we process your personal data.",
-      "text6": "Please provide your consent ID and the date when you will contact us regarding your consent.",
+      "text5": "Find out more in our privacy policy about who we are, how you can Contact Us, and how we process your personal data.",
+      "text6": "Please provide your consent ID and the date when you will Contact Us regarding your consent.",
       "details": "Details",
       "necessary": "Necessary",
       "necessaryDesc": "Necessary cookies help make a website usable by enabling basic functions such as page navigation and access to secure areas of the website. The website cannot function properly without these cookies.",
@@ -214,7 +214,7 @@
     "error": "Error"
   },
   "registration": {
-    "label": "Contact us",
+    "label": "Contact Us",
     "title": "Get in touch",
     "description": "We'd love to hear from you. Please fill out this form.",
     "firstName": "First name",
