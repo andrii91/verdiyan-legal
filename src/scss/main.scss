@@ -70,6 +70,10 @@ select {
   padding: 0 $spacing-lg;
   width: 100%;
 
+  @media (min-width: 1200px) and (max-width: 1328px) {
+    padding: 0 40px;
+  }
+
   @media (max-width: 1023px) {
     padding: 0 16px;
   }
@@ -1063,6 +1067,7 @@ select {
     flex-direction: column;
     min-width: 232px;
     border-radius: 8px;
+    max-width: 480px;
 
     @media (max-width: 1200px) {
       min-width: 200px;
@@ -1081,13 +1086,12 @@ select {
 
   &__image {
     width: 100%;
-    height: 100%;
-    
 
     img {
       border-radius: 8px 8px 0 0;
-      width: 100%;
       height: 100%;
+    width: 100%;
+
       object-fit: cover;
 
       aspect-ratio: 264/396;
@@ -1171,6 +1175,10 @@ select {
         display: none;
       }
      
+    }
+
+    .about-us__footer {
+      height: 100%;
     }
   }
 
