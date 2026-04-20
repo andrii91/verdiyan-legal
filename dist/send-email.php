@@ -5,11 +5,10 @@ require __DIR__ . '/vendor/autoload.php';
 $config = require __DIR__ . '/email-config.php';
 
 use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
 
 function sanitizeInput($data) {
-    return htmlspecialchars(stripslashes(trim($data)), ENT_QUOTES, 'UTF-8');
+    return strip_tags(trim($data));
 }
 
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
