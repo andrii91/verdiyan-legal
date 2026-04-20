@@ -542,56 +542,27 @@
   }
 
   // Initialize animate on scroll
-function initAnimateOnScroll() {
-  const fadeMap = {
-    "fade-in": "fadeIn",
-    "fade-in-right": "fadeInRight",
-    "fade-in-left": "fadeInLeft",
-    "fade-in-up": "fadeInUp",
-  };
+  function initAnimateOnScroll() {
+    const fadeMap = {
+      "fade-in": "fadeIn",
+      "fade-in-right": "fadeInRight",
+      "fade-in-left": "fadeInLeft",
+      "fade-in-up": "fadeInUp",
+    };
 
-  const fadeClasses = Object.keys(fadeMap);
-  let pending = [];
-
-  fadeClasses.forEach(fadeClass => {
-    document.querySelectorAll(`.${fadeClass}`).forEach(el => {
-      el.classList.add("hidden_animation");
-      pending.push(el);
-    });
-  });
-
-  function isInViewport(el) {
-    const rect = el.getBoundingClientRect();
-    return rect.top < window.innerHeight && rect.bottom > 0;
-  }
-
-  function checkElements() {
-    pending = pending.filter(el => {
-      if (!isInViewport(el)) return true;
-
-      for (const key of fadeClasses) {
-        if (el.classList.contains(key)) {
-          el.classList.add("visible", "animated", fadeMap[key]);
-          el.classList.remove("hidden_animation");
-          setTimeout(() => {
-            el.classList.remove("animated", fadeMap[key]);
-          }, 1000);
-          break;
+    $.each(fadeMap, function(fadeClass, animClass) {
+      $('.' + fadeClass).addClass('hidden_animation').viewportChecker({
+        classToAdd: 'visible animated ' + animClass,
+        classToRemove: 'hidden_animation',
+        offset: 100,
+        callbackFunction: function($el, action) {
+          if (action === 'add') {
+            setTimeout(function() { $el.removeClass('animated ' + animClass); }, 1000);
+          }
         }
-      }
-      return false;
+      });
     });
-
-    if (pending.length === 0) {
-      window.removeEventListener("scroll", checkElements);
-      window.removeEventListener("resize", checkElements);
-    }
   }
-
-  window.addEventListener("scroll", checkElements, { passive: true });
-  window.addEventListener("resize", checkElements, { passive: true });
-  checkElements();
-}
 
   // Initialize privacy policy navigation
   function initPrivacyPolicyNavigation() {

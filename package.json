@@ -36,6 +36,7 @@
   },
   "dependencies": {
     "jquery": "^3.7.1",
+    "jquery-viewport-checker": "^1.8.8",
     "jquery.inputmask": "^3.3.4",
     "slick-carousel": "^1.8.1"
   }

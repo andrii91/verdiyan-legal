@@ -45,6 +45,7 @@ gulp.task('js', function() {
       'node_modules/jquery/dist/jquery.min.js',
       'node_modules/jquery.inputmask/dist/jquery.inputmask.bundle.js',
       'node_modules/slick-carousel/slick/slick.min.js',
+      'node_modules/jquery-viewport-checker/src/jquery.viewportchecker.js',
       'src/libs/**/*.js',
       'src/js/**/*.js',
       '!src/js/i18n.js' // Exclude i18n.js from main bundle
@@ -127,6 +128,12 @@ gulp.task('php', function() {
     .pipe(gulp.dest('dist'));
 });
 
+// Copy PHPMailer vendor to dist
+gulp.task('vendor', function() {
+  return gulp.src('vendor/**/*', { base: '.' })
+    .pipe(gulp.dest('dist'));
+});
+
 // Copy favicon folder with all files
 gulp.task('favicon', function() {
   return gulp.src('src/favicon/**/*', { 
@@ -149,7 +156,7 @@ gulp.task('serve', function() {
 // Build task
 gulp.task('build', gulp.series(
   'clean',
-  gulp.parallel('sass', 'js', 'js-i18n', 'images-all', 'images-optimize', 'fonts', 'locales', 'pages', 'php', 'favicon')
+  gulp.parallel('sass', 'js', 'js-i18n', 'images-all', 'images-optimize', 'fonts', 'locales', 'pages', 'php', 'favicon', 'vendor')
 ));
 
 // Watch task

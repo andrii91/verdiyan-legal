@@ -25,5 +25,13 @@ Thumbs.db
 .env
 .env.local
 
+# PHP dependencies
+vendor/
+composer.lock
+
+# Email credentials (never commit)
+src/email-config.php
+dist/email-config.php
+
 # Source maps (optional - uncomment if you don't want to commit them)
 # *.map
