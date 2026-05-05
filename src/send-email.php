@@ -42,7 +42,10 @@ try {
     $mail->isSMTP();
     $mail->Host       = $config['smtp_host'];
     $mail->Port       = $config['smtp_port'];
-    $mail->SMTPAuth   = false;
+    $mail->SMTPAuth   = true;
+    $mail->Username   = $config['smtp_username'];
+    $mail->Password   = $config['smtp_password'];
+    $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
     $mail->CharSet    = PHPMailer::CHARSET_UTF8;
 
     $mail->setFrom($config['from_email'], $config['from_name']);
@@ -61,5 +64,5 @@ try {
     echo json_encode(['success' => true, 'message' => 'Thank you! We will contact you soon.']);
 
 } catch (Exception $e) {
-    echo json_encode(['success' => false, 'message' => 'Failed to send email. Please try again later.']);
+    echo json_encode(['success' => false, 'message' => $mail->ErrorInfo]);
 }

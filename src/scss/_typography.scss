@@ -2,7 +2,33 @@
 // Based on the typography guide from design
 
 @use 'variables' as *;
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../fonts/open-sans-latin-400-normal.woff2') format('woff2'),
+       url('../fonts/open-sans-latin-400-normal.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../fonts/open-sans-latin-500-normal.woff2') format('woff2'),
+       url('../fonts/open-sans-latin-500-normal.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../fonts/open-sans-latin-600-normal.woff2') format('woff2'),
+       url('../fonts/open-sans-latin-600-normal.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
 
 // Font Family
 $font-family-base: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;

@@ -134,6 +134,18 @@ gulp.task('vendor', function() {
     .pipe(gulp.dest('dist'));
 });
 
+// Copy .htaccess to dist
+gulp.task('htaccess', function() {
+  return gulp.src('src/.htaccess', { dot: true })
+    .pipe(gulp.dest('dist'));
+});
+
+// Copy robots.txt to dist
+gulp.task('robots', function() {
+  return gulp.src('src/robots.txt')
+    .pipe(gulp.dest('dist'));
+});
+
 // Copy favicon folder with all files
 gulp.task('favicon', function() {
   return gulp.src('src/favicon/**/*', { 
@@ -156,7 +168,7 @@ gulp.task('serve', function() {
 // Build task
 gulp.task('build', gulp.series(
   'clean',
-  gulp.parallel('sass', 'js', 'js-i18n', 'images-all', 'images-optimize', 'fonts', 'locales', 'pages', 'php', 'favicon', 'vendor')
+  gulp.parallel('sass', 'js', 'js-i18n', 'images-all', 'images-optimize', 'fonts', 'locales', 'pages', 'php', 'favicon', 'vendor', 'htaccess', 'robots')
 ));
 
 // Watch task

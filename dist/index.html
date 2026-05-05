@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="cs-CZ">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,16 +18,19 @@
   <meta name="googlebot" content="index, follow">
   <meta name="google" content="notranslate">
   <meta name="google-site-verification" content="google-site-verification">
-  <meta property="og:image" content="images/og.png">
+  <meta property="og:image" content="https://www.verdiyan-legal.cz/images/og.png">
   <meta property="og:title" content="Verdiyan Legal">
   <meta property="og:description" content="Legal assistance to your business">
   <meta property="og:url" content="https://www.verdiyan-legal.cz/">
   <meta property="og:site_name" content="Verdiyan Legal">
   <meta property="og:type" content="website">
-  <meta property="og:locale" content="cz-CZ">
+  <meta property="og:locale" content="cs_CZ">
   <meta property="og:image:width" content="1200">
+  <!-- Font preload -->
+  <link rel="preload" href="fonts/open-sans-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/open-sans-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin>
   <!-- Styles -->
-  <link rel="stylesheet" href="css/main.min.css">
+  <link rel="stylesheet" href="css/main.min.css?v=1.1">
 
   <svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" class="visually-hidden">
     <symbol id="icon-close" viewBox="0 0 16 16" fill="none">
@@ -149,7 +152,7 @@
     <div class="container">
       <div class="header__inner">
         <div class="header__content">
-          <h1 class="header__title fade-in-up" data-i18n="header.title">Verdiyan Legal</h1>
+          <h1 class="header__title split-heading" data-i18n="header.title">Verdiyan Legal</h1>
           <p class="header__description fade-in-up" data-i18n="header.description">Advokátní kancelář poskytuje právní služby klientům z řad fyzických osob i obchodních společností, a to s důrazem na vysokou odbornou úroveň, strategický přístup a srozumitelnou komunikaci.</p>
           <div class="header__cta fade-in-up">
             <a href="consumer-representation.html"  class="btn btn-cta btn-cta--violet-primary lg-hidden" data-i18n="nav.consumerRepresentation">Zastupování spotřebitelů</a>
@@ -171,7 +174,7 @@
             <use href="#icon-specializations" />
           </svg>
         </div>
-        <h2 class="specializations__title fade-in-up" data-i18n="specializations.title">Specializace</h2>
+        <h2 class="specializations__title split-heading" data-i18n="specializations.title">Specializace</h2>
         <p class="specializations__description fade-in-up" data-i18n="specializations.description">Specializujeme se na poskytování právních služeb v široké oblasti. Pomáháme klientům řešit právní otázky týkající se majetkových práv, smluvních vztahů, dědictví a dalších oblastí občanského práva. Zajišťujeme přípravu a revizi smluv, zastupování ve sporech a ochranu osobních práv a majetkových zájmů.</p>
 
         <div class="specializations__inner">
@@ -276,7 +279,7 @@
           <div class="about-us__row">
             <div class="about-us__text fade-in-up">
               <p class="about-us__description" data-i18n="aboutUs.description">O nás</p>
-              <h2 class="about-us__title" data-i18n="aboutUs.title">Verdiyan Legal</h2>
+              <h2 class="about-us__title split-heading" data-i18n="aboutUs.title">Verdiyan Legal</h2>
 
               <div class="about-us__content fade-in-up">
                 <p data-i18n="aboutUs.paragraph1">Zakládajícím partnerem advokátní kanceláře Verdiyan Legal je Mgr. Bagrat Verdiyan, advokát, který působí v advokacii od roku 2005. Od roku 2009 vykonává advokacii jako samostatný advokát. Před založením vlastní praxe získal rozsáhlé zkušenosti v rámci dlouhodobé spolupráce s přední českou advokátní kanceláří, kde se podílel na řešení právních agend významných korporátních klientů i na zastupování v rozsáhlých soudních sporech.</p>
@@ -396,7 +399,7 @@
 
     <section class="section services" id="services">
       <div class="container">
-        <h2 class="services__title fade-in-up" data-i18n="services.title">Služby</h2>
+        <h2 class="services__title split-heading" data-i18n="services.title">Služby</h2>
         <div class="services__inner">
           <div class="services__item fade-in-up">
             <div class="services__item-icon">
@@ -446,7 +449,7 @@
   <footer class="footer-bg">
     <section class="contact-us" id="contact-us">
       <div class="container">
-        <h2 class="contact-us__title fade-in-up" data-i18n="contactUs.title">Kontaktujte nás</h2>
+        <h2 class="contact-us__title split-heading" data-i18n="contactUs.title">Kontaktujte nás</h2>
 
         <div class="contact-us__inner">
           <div class="contact-us__address fade-in-up">
@@ -530,9 +533,9 @@
           <p><span data-i18n="footer.consumerInfo.description">Česká advokátní komora byla Ministerstvem průmyslu a obchodu ČR pověřena k mimosoudnímu řešení spotřebitelských sporů podle zákona č. 634/1992 Sb., o ochraně spotřebitele, ve znění pozdějších předpisů. Toto pověření se vztahuje na spory mezi advokátem a spotřebitelem týkající se poskytování právních služeb. Více informací je k dispozici na internetových stránkách České advokátní komory:</span> <a href="https://www.cak.cz/advokat-detail/88ade0a6-5e23-e711-80d5-00155d040b0c" target="_blank" class="link">www.cak.cz</a></p>
 
           <div class="footer__bottom-row">
-            <p class="fade-in-left" data-i18n="footer.copyright">© 2026 Verdiyan Legal s.r.o. Všechna práva vyhrazena.</p>
+            <p  data-i18n="footer.copyright">© 2026 Verdiyan Legal s.r.o. Všechna práva vyhrazena.</p>
 
-            <ul class="footer__bottom-list fade-in-right">
+            <ul class="footer__bottom-list">
               <li class="footer__bottom-item">
                 <a href="privacy-policy.html" class="footer__bottom-link" data-i18n="footer.privacyPolicy">Ochrana osobních údajů</a>
               </li>
@@ -671,6 +674,6 @@
 
   <!-- Scripts -->
   <script defer src="js/i18n.js"></script>
-  <script defer src="js/main.min.js"></script>
+  <script defer src="js/main.min.js?v=1.1"></script>
 </body>
 </html>

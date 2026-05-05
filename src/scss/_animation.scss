@@ -1,4 +1,6 @@
 
+@use 'variables' as *;
+
 :root {
   --animate-duration: 1s;
   --animate-delay: 1s;
@@ -38,6 +40,24 @@
 .hidden_animation {
   opacity: 0;
 }
+
+// Split heading — letter by letter
+.split-heading {
+  .char {
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  &.chars-visible .char {
+    opacity: 1;
+    transform: translateY(0);
+    transition-property: opacity, transform;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+  }
+}
+
 
 
 @keyframes fadeInUp {

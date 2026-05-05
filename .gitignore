@@ -35,3 +35,6 @@ dist/email-config.php
 
 # Source maps (optional - uncomment if you don't want to commit them)
 # *.map
+prod/
+robots.txt
+.htaccess
