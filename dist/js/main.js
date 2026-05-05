@@ -3039,8 +3039,8 @@
       hideCookieBanner();
     });
 
-    // Handle reject all
-    $('.cookie-banner__reject').on('click', function() {
+    // Handle reject all / allow selection (same behavior until external CMP is integrated)
+    $('.cookie-banner__reject, .cookie-banner__select').on('click', function() {
       setCookie('cookie_consent', 'rejected', 365); // Store for 1 year
       hideCookieBanner();
     });

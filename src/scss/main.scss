@@ -443,6 +443,7 @@ select {
 }
 
 // Cookie Consent Banner
+// TODO(CMP): remove this entire .cookie-banner block when external cookie consent service is integrated
 .cookie-banner {
   position: fixed;
   bottom: 16px;
@@ -535,7 +536,7 @@ select {
     }
   }
 
-  &__accept, &__reject {
+  &__accept, &__select, &__reject {
     @media (max-width: 1023px) {
       width: 100%;
       flex: 1;
@@ -546,7 +547,7 @@ select {
     }
   }
 
-  &__reject {
+  &__select, &__reject {
     background: none;
     border: none;
     color: $white-000;

@@ -651,6 +651,7 @@
   </div>
 
   <!-- Cookie Consent Banner -->
+  <!-- TODO(CMP): remove this entire #cookie-banner block when external cookie consent service is integrated -->
   <div id="cookie-banner" class="cookie-banner" style="display: none;">
     <div class="cookie-banner__content">
       <button class="cookie-banner__close" aria-label="Close">
@@ -661,9 +662,10 @@
       <h2 class="cookie-banner__title" data-i18n="cookies.title">Tento web využívá cookies</h2>
       <p class="cookie-banner__text" data-i18n="cookies.description">Využíváme soubory cookies, které zpracováváme podle zásad ochrany osobních údajů.</p>
       <div class="cookie-banner__actions">
-        <button class="btn btn-cta btn-cta--light-primary cookie-banner__accept" data-i18n="cookies.acceptAll">Přijmout vše</button>
+        <button class="btn btn-cta btn-cta--light-primary cookie-banner__accept" data-i18n="cookies.acceptAll">Povolit vše</button>
+        <button class="cookie-banner__select" data-i18n="cookies.allowSelection">Povolit výběr</button>
         <button class="cookie-banner__reject">
-          <span data-i18n="cookies.rejectAll">Odmítnout vše</span>
+          <span data-i18n="cookies.rejectAll">Odmítnout</span>
           <svg class="icon" viewBox="0 0 20 20" fill="none">
             <use href="#icon-arrow-right" />
           </svg>

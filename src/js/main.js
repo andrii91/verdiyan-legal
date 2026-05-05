@@ -26,7 +26,7 @@
     // Smooth scroll for anchor links
     initSmoothScroll();
     
-    // Initialize cookie consent banner
+    // TODO(CMP): remove this call when external cookie consent service is integrated
     initCookieBanner();
     
     // Initialize registration modal
@@ -132,6 +132,7 @@
   }
 
   // Cookie Consent Banner
+  // TODO(CMP): remove this entire function when external cookie consent service is integrated
   function initCookieBanner() {
     // Check if user already made a choice
     const cookieConsent = getCookie('cookie_consent');
@@ -147,8 +148,8 @@
       hideCookieBanner();
     });
 
-    // Handle reject all
-    $('.cookie-banner__reject').on('click', function() {
+    // Handle reject all / allow selection (same behavior until external CMP is integrated)
+    $('.cookie-banner__reject, .cookie-banner__select').on('click', function() {
       setCookie('cookie_consent', 'rejected', 365); // Store for 1 year
       hideCookieBanner();
     });

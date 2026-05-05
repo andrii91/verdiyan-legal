@@ -84,7 +84,8 @@
   "cookies": {
     "title": "This website uses cookies",
     "description": "We use cookies, which we process according to the principles of personal data protection.",
-    "acceptAll": "Accept all",
+    "acceptAll": "Allow all",
+    "allowSelection": "Allow selection",
     "rejectAll": "Reject"
   },
   "contactUs": {

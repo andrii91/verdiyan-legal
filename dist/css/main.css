@@ -1523,7 +1523,7 @@ select.select-light {
   }
 }
 @media (max-width: 1023px) {
-  .cookie-banner__accept, .cookie-banner__reject {
+  .cookie-banner__accept, .cookie-banner__select, .cookie-banner__reject {
     width: 100%;
     -webkit-box-flex: 1;
     -ms-flex: 1;
@@ -1540,7 +1540,7 @@ select.select-light {
     justify-content: center;
   }
 }
-.cookie-banner__reject {
+.cookie-banner__select, .cookie-banner__reject {
   background: none;
   border: none;
   color: #ffffff;
@@ -1558,10 +1558,10 @@ select.select-light {
   -webkit-transition: opacity 200ms ease;
   transition: opacity 200ms ease;
 }
-.cookie-banner__reject:hover {
+.cookie-banner__select:hover, .cookie-banner__reject:hover {
   opacity: 0.7;
 }
-.cookie-banner__reject svg {
+.cookie-banner__select svg, .cookie-banner__reject svg {
   width: 20px;
   height: 20px;
 }

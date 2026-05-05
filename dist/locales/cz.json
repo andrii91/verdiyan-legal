@@ -85,6 +85,7 @@
     "title": "Tento web využívá cookies",
     "description": "Využíváme soubory cookies, které zpracováváme podle zásad ochrany osobních údajů.",
     "acceptAll": "Povolit vše",
+    "allowSelection": "Povolit výběr",
     "rejectAll": "Odmítnout"
   },
   "contactUs": {
