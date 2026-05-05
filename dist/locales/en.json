@@ -85,7 +85,7 @@
     "title": "This website uses cookies",
     "description": "We use cookies, which we process according to the principles of personal data protection.",
     "acceptAll": "Accept all",
-    "rejectAll": "Reject all"
+    "rejectAll": "Reject"
   },
   "contactUs": {
     "title": "Contact Us",
@@ -216,13 +216,13 @@
   "registration": {
     "label": "Contact Us",
     "title": "Get in touch",
-    "description": "We'd love to hear from you. Please fill out this form.",
+    "description": "We´d like to hear from you.",
     "firstName": "First name",
     "lastName": "Last name",
-    "email": "you@company.com",
+    "email": "E-mail",
     "phone": "+1 (555) 000-0000",
     "message": "Leave us a message...",
-    "privacyPolicy": "You agree to our friendly privacy policy.",
+    "privacyPolicy": "You agree to our privacy policy",
     "submit": "Send message",
     "sending": "Sending...",
     "success": "Thank you for your message! We will contact you soon.",

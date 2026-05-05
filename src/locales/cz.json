@@ -84,8 +84,8 @@
   "cookies": {
     "title": "Tento web využívá cookies",
     "description": "Využíváme soubory cookies, které zpracováváme podle zásad ochrany osobních údajů.",
-    "acceptAll": "Přijmout vše",
-    "rejectAll": "Odmítnout vše"
+    "acceptAll": "Povolit vše",
+    "rejectAll": "Odmítnout"
   },
   "contactUs": {
     "title": "Kontaktujte nás",
@@ -216,13 +216,13 @@
   "registration": {
     "label": "Kontaktujte nás",
     "title": "Spojte se s námi",
-    "description": "Rádi bychom vás slyšeli. Prosím vyplňte tento formulář.",
+    "description": "Rádi Vás vyslechneme.",
     "firstName": "Jméno",
     "lastName": "Příjmení",
-    "email": "vas@spolecnost.cz",
+    "email": "E-mail",
     "phone": "+420 123 456 789",
     "message": "Napište nám zprávu...",
-    "privacyPolicy": "Souhlasíte s naší přátelskou zásadou ochrany osobních údajů.",
+    "privacyPolicy": "Souhlasíte se zásadami ochrany osobních údajů",
     "submit": "Odeslat zprávu",
     "sending": "Odesílání...",
     "success": "Děkujeme za vaši zprávu! Brzy vás kontaktujeme.",
